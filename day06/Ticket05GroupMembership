@@ -1,0 +1,20 @@
+# Ticket #5 – Group Membership Issue
+
+## Issue:
+User cannot access the inventory control shared folder
+
+## Investigation:
+Open Active Directory and client computer
+Located the user account
+Checked the user’s group memberships
+Verified the user was missing from the inventory staff security group
+
+## Root Cause:
+The user was not assigned to the correct active directory inventory staff group to access inventory resources
+
+## Resolution:
+Added the user Lennet Naranjo to the inventory staff security group
+Verified the users group membership was updated
+
+## Verification:
+User successfully accessed the inventory control shared folder
