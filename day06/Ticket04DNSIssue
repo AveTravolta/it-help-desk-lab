@@ -1,0 +1,20 @@
+# Ticket #4 – DNS Issue
+
+## Issue:
+The user is unable to access company resources
+
+## Investigation:
+Opened Active Directory and the client computer
+Used NSLookup to verify domain controller DNS resolution
+Verified that the domain controller could not be reached
+Checked the DNS settings for the user computer
+
+## Root Cause:
+The users IPV4 DNS settings were incorrect
+
+## Resolution:
+I set the IPV4 DNS to the correct settings
+Used NSLookup to ping the domain controller
+
+## Verification:
+The user computer successfully pinged the domain controller
