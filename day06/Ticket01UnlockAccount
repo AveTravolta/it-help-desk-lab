@@ -1,0 +1,23 @@
+# Ticket #1 – Account Lockout
+
+## Issue:
+The user is locked out of their account
+
+## Investigation:
+Opened Active Directory and Client Computer
+Located the user account
+Verified that the account is not disabled
+Confirmed that the account is locked
+
+## Root Cause:
+The user exceeded the amount of failed login attempts and has been temporarily locked out of their account
+
+## Resolution:
+Unlocked the account
+Had the user login and reset their password
+
+## Verification:
+User logged into the workstation successfully
+
+## Lessons Learned:
+Unlocking an account does not automatically reset the password
