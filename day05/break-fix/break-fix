@@ -1,0 +1,27 @@
+# Day 5 — DNS Break/Fix Ticket
+
+## Ticket #001 — Client01 Unable to Resolve Internal Domain
+
+## Issue:
+
+Client01 was unable to resolve the internal Active Directory domain after DNS settings were changed.
+
+## Troubleshooting:
+
+Changed Client01 DNS server from `10.1.10.2` to `8.8.8.8` and tested DNS resolution using:
+```cmd
+ping sandoval.local
+
+## Result:
+
+Client01 could no longer locate sandoval.local
+Internal Active Directory DNS resolution failed
+Public DNS server did not contain records for the internal domain
+
+## Resolution:
+
+Restored Client01 DNS server back to 10.1.10.2 and verified DNS recovery using:
+
+### Outcome:
+
+DNS resolution was successfully restored.
