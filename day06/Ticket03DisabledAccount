@@ -1,0 +1,21 @@
+# Ticket #3 – Disabled User Account
+
+## Issue:
+The user is attempting to login to their account but their account is disabled
+
+## Investigation:
+Opened Active Directory and the client computer
+Located the user account
+Verified that the account is disabled
+
+## Root Cause:
+The user is a rehired employee attempting to login to a disabled user account
+
+## Resolution:
+Logged in to Active Directory
+Enabled the user account
+Set a temporary password for the user
+Verified that the user logged in using the temporary password
+
+## Verification:
+User changed their password and logged into their account successfully
