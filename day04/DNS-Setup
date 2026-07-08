@@ -1,0 +1,22 @@
+# Day 5 — DNS (AD Foundation)
+
+## Completed:
+
+- Reviewed DNS fundamentals:
+  - Name resolution
+  - Recursive DNS concepts
+  - Why Active Directory depends on DNS
+
+- Verified Client01 DNS configuration:
+  - Confirmed Client01 was using DC01 as the DNS server
+  - Confirmed domain suffix:
+    - sandoval.local
+
+- Tested DNS resolution:
+
+Commands used:
+```cmd
+ipconfig /all
+ping dc01
+ping sandoval.local
+nslookup sandoval.local
