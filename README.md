@@ -26,6 +26,12 @@ The lab environment uses **Windows Server Active Directory Domain Services (AD D
 
 ---
 
+## Why This Project
+
+This lab was created to bridge the gap between theoretical IT knowledge and practical experience by simulating common enterprise support scenarios.
+
+The environment focuses on skills commonly used by Help Desk Technicians, Junior System Administrators, and Cloud Support professionals.
+
 ## 🧱 Lab Environment
 
 - Virtualization: VirtualBox
