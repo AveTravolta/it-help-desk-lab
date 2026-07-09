@@ -1,0 +1,205 @@
+# Day 6 — Help Desk Ticket Simulation
+
+## Objective
+
+Practice thinking like a Help Desk Technician by troubleshooting common Active Directory and user support issues.
+
+This lab focused on using a structured troubleshooting workflow:
+
+1. Issue
+2. Investigation
+3. Root Cause
+4. Resolution
+5. Verification
+
+---
+
+# Skills Practiced
+
+- Active Directory troubleshooting
+- User account management
+- Password resets
+- Account lockout troubleshooting
+- Disabled account management
+- DNS troubleshooting
+- Security group management
+- Help Desk ticket documentation
+
+---
+
+# Lab Environment
+
+- Domain Controller: DC01
+- Client Machine: Client01 (Windows 11)
+- Domain: sandoval.local
+
+Tools Used:
+
+- Active Directory Users and Computers
+- Windows Settings
+- Command Prompt
+- NSLookup
+
+---
+
+# Completed Help Desk Tickets
+
+## Ticket #001 — Account Lockout
+
+### Issue
+
+User is unable to log in due to an account lockout.
+
+### Investigation
+
+- Opened Active Directory Users and Computers.
+- Located the user account.
+- Verified the account lockout status.
+
+### Root Cause
+
+User account was locked after multiple failed login attempts.
+
+### Resolution
+
+- Unlocked the user account in Active Directory.
+- Verified the account was available for login.
+
+### Verification
+
+User successfully logged into the workstation.
+
+---
+
+## Ticket #002 — Password Reset
+
+### Issue
+
+User cannot remember their password and is unable to log in.
+
+### Investigation
+
+- Opened Active Directory Users and Computers.
+- Located the user account.
+- Verified the account was enabled.
+- Confirmed the account was not locked.
+
+### Root Cause
+
+User was unable to recall their password after an extended leave of absence.
+
+### Resolution
+
+- Reset the user's password in Active Directory.
+- Created a temporary password.
+- Enabled "User must change password at next logon."
+- Verified the user could access the workstation.
+
+### Verification
+
+User successfully logged into the workstation and completed the password change process.
+
+---
+
+## Ticket #003 — Disabled User Account
+
+### Issue
+
+User is attempting to log in but their account is disabled.
+
+### Investigation
+
+- Opened Active Directory Users and Computers.
+- Located the user account.
+- Verified that the account was disabled.
+
+### Root Cause
+
+User was a re-hired employee attempting to access a previously disabled account.
+
+### Resolution
+
+- Enabled the user account in Active Directory.
+- Set a temporary password.
+- Verified the user could log in.
+
+### Verification
+
+User successfully changed their password and logged into their account.
+
+---
+
+## Ticket #004 — DNS Issue
+
+### Issue
+
+User is unable to access company resources.
+
+### Investigation
+
+- Checked the DNS settings on the user computer.
+- Used NSLookup to verify domain controller DNS resolution.
+- Verified the domain controller could not be reached due to DNS configuration.
+
+### Root Cause
+
+The user's IPv4 DNS settings were incorrect.
+
+### Resolution
+
+- Updated the IPv4 DNS settings to the correct configuration.
+- Used NSLookup to verify domain controller DNS resolution.
+
+### Verification
+
+The user computer successfully resolved and reached the domain controller.
+
+---
+
+## Ticket #005 — Group Membership Issue
+
+### Issue
+
+User is unable to access company resources.
+
+### Investigation
+
+- Opened Active Directory Users and Computers.
+- Located the user account.
+- Checked the user's group memberships.
+- Verified the user was missing from the required security group.
+
+### Root Cause
+
+User was not assigned to the correct Active Directory security group required for access.
+
+### Resolution
+
+- Added the user to the correct security group.
+- Verified the user's group membership was updated.
+
+### Verification
+
+User successfully accessed the required resource.
+
+---
+
+# Lessons Learned
+
+- User issues are not always caused by the problem they report.
+- Troubleshooting requires gathering information before applying fixes.
+- Active Directory groups are used to manage user access and permissions.
+- DNS is a critical component of Active Directory functionality.
+- Proper documentation is an important part of the Help Desk workflow.
+
+---
+
+# Screenshots
+
+Screenshots included in this folder demonstrate:
+
+- Active Directory user management
+- Account troubleshooting
+- DNS configuration changes
+- Ticket resolution steps
+- Verification of completed fixes
