@@ -32,6 +32,8 @@ This lab was created to bridge the gap between theoretical IT knowledge and prac
 
 The environment focuses on skills commonly used by Help Desk Technicians, Junior System Administrators, and Cloud Support professionals.
 
+---
+
 ## 🧱 Lab Environment
 
 - Virtualization: VirtualBox
