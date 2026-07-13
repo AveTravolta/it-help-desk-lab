@@ -1,0 +1,16 @@
+# Day 8 – Passwords + Account Lockouts (Help Desk Core)
+
+## Completed:
+
+- Reviewed Active Directory account lockout policies
+- Examined the Default Domain Policy account lockout settings:
+  - Account Lockout Threshold
+  - Account Lockout Duration
+  - Reset Account Lockout Counter After
+- Modified the Account Lockout Threshold from **3 failed attempts** to **2 failed attempts** for lab testing
+- Updated Group Policy by running **gpupdate /force** on both **DC01** and **Client01**
+- Simulated a user account lockout using the **Pickles Pugsley (PnP)** domain account
+- Verified the account was locked in Active Directory Users and Computers (ADUC)
+- Unlocked the user account
+- Verified the account was enabled and not disabled
+- Confirmed the user was able to successfully authenticate after the account was unlocked
