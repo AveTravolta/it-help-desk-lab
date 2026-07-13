@@ -1,0 +1,27 @@
+## Break/Fix Tickets:
+
+### Ticket 1 – Account Lockout
+
+**Issue:**
+User was unable to log into their domain account after exceeding the maximum number of failed login attempts.
+
+**Investigation:**
+- Opened Active Directory Users and Computers (ADUC)
+- Located the affected user account
+- Verified the user's identity by confirming their department and manager information
+- Confirmed the account was enabled
+- Verified the account was locked due to failed login attempts
+
+**Root Cause:**
+The user exceeded the configured Account Lockout Threshold, causing Active Directory to temporarily lock the account.
+
+**Resolution:**
+- Unlocked the user account in Active Directory
+- Instructed the user to sign in again
+
+**Verification:**
+- Confirmed the user successfully logged into the domain account
+
+**Lessons Learned:**
+- Group Policy changes require **gpupdate /force** (or time for policy refresh) before clients receive updated settings.
+- Unlocking an account restores access but does **not** reset the user's password.
