@@ -139,14 +139,103 @@ Documented each ticket using:
 
 ---
 
+## Day 7 – Portfolio Documentation & Lab Review
+
+Completed:
+
+- Reviewed previous Active Directory configurations
+- Verified:
+  - Users
+  - Security groups
+  - Organizational Units
+  - DNS configuration
+  - Domain join functionality
+
+Updated project documentation:
+
+- Organized GitHub repository structure
+- Added lab reflections
+- Improved project presentation for portfolio use
+
+---
+
+## Day 8 – Password Reset & Account Lockout Troubleshooting
+
+Completed:
+
+- Reviewed Active Directory password management
+- Configured and tested account lockout policies
+- Practiced common Help Desk account issues
+
+Completed troubleshooting scenarios:
+
+- Locked user account
+- Verified account lockout behavior
+- Reset user passwords
+- Unlocked user accounts
+- Verified successful login after resolution
+
+Documented troubleshooting workflow:
+
+- Issue
+- Investigation
+- Root Cause
+- Resolution
+- Verification
+
+---
+
+## Day 9 – Group Policy Management
+
+Completed:
+
+- Created and configured Group Policy Objects (GPOs)
+- Applied centralized user settings through Active Directory
+
+Created policies:
+
+- Wallpaper Policy
+  - Applied desktop wallpaper settings to Golf Employees OU
+
+- Control Panel Restriction Policy
+  - Disabled Control Panel access for Inventory users
+
+Completed troubleshooting scenario:
+
+- Investigated GPO application failure
+- Reviewed:
+  - Organizational Unit placement
+  - GPO links
+  - Security Filtering
+  - GPO permissions
+
+Resolved issue:
+
+- Corrected Security Filtering configuration
+- Restored required Authenticated Users permissions
+- Verified successful policy application using:
+
+```cmd
+gpupdate /force
+gpresult /r
+
 # 🧠 Skills Practiced
 
 ## Active Directory
 - User account management
 - Security groups
 - Organizational Units
+- Group Policy Objects (GPOs)
 - Password resets
+- Account lockout troubleshooting
 - Account troubleshooting
+
+## Windows Administration
+- Group Policy Management
+- User Configuration policies
+- Desktop configuration management
+- User restrictions
+- Policy troubleshooting
 
 ## Networking
 - DNS troubleshooting
@@ -158,6 +247,7 @@ Documented each ticket using:
 - Troubleshooting methodology
 - Root cause analysis
 - Verification procedures
+- User support workflows
 
 ---
 
