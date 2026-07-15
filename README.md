@@ -218,6 +218,7 @@ Resolved issue:
 ```cmd
 gpupdate /force
 gpresult /r
+```
 
 # 🧠 Skills Practiced
 
