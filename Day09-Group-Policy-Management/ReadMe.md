@@ -62,21 +62,21 @@ and
 gpresult /r
 Resolved the issue by restoring required Authenticated Users permissions.
 
-## Skills Learned
+# Skills Learned
 
-```Active Directory
+## Active Directory
 Organizational Units
 Security Groups vs OUs
 User policy targeting
 
-```Group Policy
+## Group Policy
 Creating GPOs
 Linking GPOs
 User Configuration policies
 Security Filtering
 Troubleshooting GPO failures
 
-```Administration Tools
+## Administration Tools
 Active Directory Users and Computers
 Group Policy Management Console
 Command-line troubleshooting
