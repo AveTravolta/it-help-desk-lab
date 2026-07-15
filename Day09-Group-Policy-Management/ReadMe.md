@@ -55,11 +55,11 @@ Troubleshooting included:
 - Reviewing Security Filtering
 - Verifying GPO permissions
 - Running:
-cmd
-gpupdate /force
-and
-gpresult /r
-Resolved the issue by restoring required Authenticated Users permissions.
+- cmd
+- gpupdate /force
+- and
+- gpresult /r
+- Resolved the issue by restoring required Authenticated Users permissions.
 
 # Skills Learned
 
