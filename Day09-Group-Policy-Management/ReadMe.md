@@ -58,9 +58,8 @@ Troubleshooting included:
 ```cmd
 - gpupdate /force
 - and
-```cmd
 - gpresult /r
-- Resolved the issue by restoring required Authenticated Users permissions.
+- Resolved the issue by restoring required Authenticated Users permissions.```
 
 # Skills Learned
 
