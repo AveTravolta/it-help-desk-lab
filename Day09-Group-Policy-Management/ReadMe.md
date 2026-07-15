@@ -55,8 +55,7 @@ Troubleshooting included:
 - Reviewing Security Filtering
 - Verifying GPO permissions
 - Running:
-
-```cmd
+cmd
 gpupdate /force
 and
 gpresult /r
