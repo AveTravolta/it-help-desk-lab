@@ -220,6 +220,63 @@ gpupdate /force
 gpresult /r
 ```
 
+---
+
+## Day 10 – DHCP Server Configuration & Troubleshooting
+
+Completed:
+
+- Installed and configured the DHCP Server role on Windows Server
+- Authorized DHCP within Active Directory
+- Created and configured a DHCP scope
+- Configured DHCP options:
+  - Default Gateway
+  - DNS Server
+  - Domain Name
+
+Created DHCP scope:
+
+- IP Range:
+  - 10.1.10.100 - 10.1.10.200
+
+Created DHCP exclusion range:
+
+- 10.1.10.100 - 10.1.10.109
+
+Verified DHCP functionality:
+
+- Configured Client01 to obtain an IP address automatically
+- Used `ipconfig /all` to verify DHCP lease information
+- Confirmed Client01 successfully received:
+  - IPv4 Address: 10.1.10.110
+  - DHCP Server: 10.1.10.2
+  - DNS Server: 10.1.10.2
+
+Completed troubleshooting scenario:
+
+- Simulated DHCP failure by deactivating the DHCP scope
+- Released the client IP address using:
+
+```cmd
+ipconfig /release
+```
+
+- Attempted to renew the DHCP lease using:
+
+```cmd
+ipconfig /renew
+```
+
+- Verified Client01 received an APIPA address (`169.254.x.x`) due to DHCP unavailability
+
+Resolved issue:
+
+- Reactivated the DHCP scope
+- Renewed the client lease
+- Verified Client01 successfully received a valid DHCP address again
+
+---
+
 # 🧠 Skills Practiced
 
 ## Active Directory
@@ -240,6 +297,8 @@ gpresult /r
 
 ## Networking
 - DNS troubleshooting
+- DHCP configuration
+- DHCP scopes and leases
 - Client/server communication
 - Name resolution testing
 
@@ -253,5 +312,3 @@ gpresult /r
 ---
 
 # 📂 Repository Structure
-
-
