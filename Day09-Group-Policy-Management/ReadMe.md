@@ -55,9 +55,10 @@ Troubleshooting included:
 - Reviewing Security Filtering
 - Verifying GPO permissions
 - Running:
-''' cmd
+```cmd
 - gpupdate /force
 - and
+```cmd
 - gpresult /r
 - Resolved the issue by restoring required Authenticated Users permissions.
 
