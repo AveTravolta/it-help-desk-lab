@@ -19,5 +19,5 @@ Create and apply a wallpaper policy to users inside the Golf Employees Organizat
 Created a new Group Policy Object:
 # Wallpaper Policy
 Linked the policy to: 
--sandoval.local
+- sandoval.local
 └── Golf Employees OU
