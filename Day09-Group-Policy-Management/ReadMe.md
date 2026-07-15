@@ -65,16 +65,16 @@ Troubleshooting included:
 # Skills Learned
 
 ## Active Directory
-Organizational Units
-Security Groups vs OUs
-User policy targeting
+- Organizational Units
+- Security Groups vs OUs
+- User policy targeting
 
 ## Group Policy
-Creating GPOs
-Linking GPOs
-User Configuration policies
-Security Filtering
-Troubleshooting GPO failures
+- Creating GPOs
+- Linking GPOs
+- User Configuration policies
+- Security Filtering
+- Troubleshooting GPO failures
 
 ## Administration Tools
 Active Directory Users and Computers
