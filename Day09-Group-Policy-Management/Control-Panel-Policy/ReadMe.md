@@ -1,5 +1,3 @@
-# 🖥️ Day 9 — Control Panel Restriction Policy
-
 ## Overview
 
 Created a Group Policy Object (GPO) to restrict access to Control Panel and Windows Settings for users in the Inventory Organizational Unit (OU).
