@@ -410,138 +410,92 @@ Verification:
 
 ---
 
-# Day 12 – Advanced Troubleshooting & Incident Response
+---
+
+# Day 12 – Help Desk Ticket Simulation & Documentation
 
 Completed:
 
-- Performed a full Help Desk troubleshooting simulation
-- Practiced diagnosing enterprise issues from a user-impact perspective
-- Used a structured troubleshooting methodology:
+- Converted previous Active Directory troubleshooting tasks into professional Help Desk ticket documentation
+- Practiced documenting incidents using a real-world support workflow:
+  - Issue
+  - Investigation
+  - Root Cause
+  - Resolution
+  - Verification
 
-  - Identify the issue
-  - Gather information
-  - Determine root cause
-  - Apply a fix
-  - Verify resolution
-  - Document the incident
-
----
-
-## 🎫 Ticket #104 — DNS Misconfiguration Troubleshooting
-
-Scenario:
-
-- Client01 was unable to properly communicate with Active Directory services
-
-Troubleshooting completed:
-
-- Reviewed network configuration using:
-
-```cmd
-ipconfig /all
-```
-
-- Verified DNS settings
-- Tested Domain Controller connectivity:
-
-```cmd
-ping dc01
-```
-
-- Tested name resolution:
-
-```cmd
-nslookup sandoval.local
-```
-
-Identified:
-
-- Client01 DNS configuration was pointing to an incorrect DNS server
-
-Root Cause:
-
-- Client workstation was unable to locate Active Directory services because DNS was not pointing to the Domain Controller DNS server
-
-Resolution:
-
-- Corrected Client01 DNS configuration
-- Restored DNS settings to:
-
-```text
-10.1.10.2
-```
-
-Verification:
-
-- Confirmed successful communication with DC01
-- Confirmed DNS resolution restored
+Created and documented simulated user support tickets:
 
 ---
 
-## 🎫 Ticket #105 — Group Policy Troubleshooting
+## 🎫 Ticket #104 — Password Reset Request
 
 Scenario:
 
-- User reported that a company policy was not applying correctly
+- User forgot their password and was unable to log into their workstation
 
 Troubleshooting completed:
 
-- Verified user and computer placement within Active Directory
-- Reviewed Group Policy links
-- Checked applied policies using:
-
-```cmd
-gpresult /r
-```
-
-- Forced Group Policy refresh:
-
-```cmd
-gpupdate /force
-```
-
-Identified:
-
-- Policy was not applying due to incorrect configuration
-
-Root Cause:
-
-- Group Policy configuration prevented the intended setting from being applied
+- Located user account in Active Directory Users and Computers (ADUC)
+- Verified user identity:
+  - Name
+  - Department
+  - Manager
+- Confirmed account was not locked
+- Confirmed account was not disabled
 
 Resolution:
 
-- Corrected GPO configuration
-- Verified proper policy targeting
-
-Verification:
-
-- Confirmed policy applied successfully on Client01
+- Reset user password
+- Enabled password change requirement at next login
+- Verified successful authentication
 
 ---
 
-## 🎫 Ticket #106 — Active Directory Login Troubleshooting
+## 🎫 Ticket #105 — Account Unlock Request
 
 Scenario:
 
-- User was unable to authenticate to the domain
+- User was unable to access their domain account after multiple failed login attempts
 
 Troubleshooting completed:
 
-- Verified account status in Active Directory Users and Computers
-- Checked:
-  - Account enabled status
-  - Password status
-  - Group membership
-  - Domain connectivity
+- Located user account in Active Directory Users and Computers (ADUC)
+- Verified user identity
+- Confirmed account lockout status
+- Confirmed account was enabled
 
 Resolution:
 
-- Corrected account configuration issue
-- Verified user authentication
+- Unlocked user account
+- Reset user password
+- Required password change at next login
+- Verified successful workstation login
+
+---
+
+## 🎫 Ticket #106 — Group Membership Issue
+
+Scenario:
+
+- User could not access Inventory Staff resources despite being the department manager
+
+Troubleshooting completed:
+
+- Reviewed user's Active Directory group memberships
+- Compared current group memberships against expected department access requirements
+- Identified missing Inventory Staff security group membership
+
+Resolution:
+
+- Added user to Inventory Staff security group
+- Had user log out and sign back in to refresh security token and apply updated group membership
 
 Verification:
 
-- User successfully logged into Client01 using domain credentials
+- User confirmed access to required Inventory Staff resources
+
+---
 
 ---
 
@@ -570,6 +524,8 @@ Verification:
 - Account lockout troubleshooting
 - Disabled account troubleshooting
 - Domain authentication troubleshooting
+- Group membership troubleshooting
+- User access management
 
 ---
 
@@ -606,6 +562,8 @@ Verification:
 - Root cause analysis
 - Incident response
 - Verification procedures
+- Identity and access troubleshooting
+- Security group administration
 - User support workflows
 - Escalation processes
 - Technical documentation
