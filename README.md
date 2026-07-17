@@ -4,7 +4,7 @@
 
 This repository documents a hands-on IT support and systems administration lab designed to simulate a small business enterprise environment.
 
-The goal of this project is to build practical experience with **Windows Server, Active Directory, DNS, user administration, troubleshooting, and help desk ticket resolution** through realistic scenarios.
+The goal of this project is to build practical experience with **Windows Server, Active Directory, DNS, DHCP, user administration, Group Policy, troubleshooting, and help desk ticket resolution** through realistic scenarios.
 
 The lab environment uses **Windows Server Active Directory Domain Services (AD DS)** and a Windows client machine to practice common entry-level IT tasks performed by Help Desk Technicians and System Administrators.
 
@@ -15,6 +15,8 @@ The lab environment uses **Windows Server Active Directory Domain Services (AD D
 - Build and manage a Windows Server domain environment
 - Configure and administer Active Directory Domain Services (AD DS)
 - Create and manage users, organizational units, and security groups
+- Configure and troubleshoot DNS and DHCP services
+- Manage and troubleshoot Group Policy Objects (GPOs)
 - Practice real-world Help Desk troubleshooting scenarios
 - Document issues using an IT ticket workflow:
   - Issue
@@ -45,6 +47,7 @@ The environment focuses on skills commonly used by Help Desk Technicians, Junior
 ### Installed Roles:
 - Active Directory Domain Services (AD DS)
 - DNS Server
+- DHCP Server
 
 ---
 
@@ -277,6 +280,135 @@ Resolved issue:
 
 ---
 
+# Day 11 – Help Desk Troubleshooting Tickets
+
+Completed:
+
+- Simulated real-world user support incidents
+- Investigated and resolved issues involving:
+  - DNS
+  - Active Directory accounts
+  - Group Policy
+
+Documented troubleshooting using:
+
+- Issue
+- Investigation
+- Root Cause
+- Resolution
+- Verification
+
+---
+
+## Completed Tickets
+
+### 🎫 Ticket #101 — DNS Failure
+
+Scenario:
+
+- User could not access network resources after restarting Client01
+- User received an error related to locating a logon server
+
+Troubleshooting completed:
+
+- Verified client connectivity to DC01
+- Reviewed network configuration using:
+
+```cmd
+ipconfig /all
+```
+
+Identified:
+
+- Incorrect preferred DNS server configuration
+
+Resolution:
+
+- Restored Client01 DNS settings to use:
+
+```text
+10.1.10.2
+```
+
+Verification:
+
+- Confirmed communication with DC01
+- Verified DNS resolution using:
+
+```cmd
+nslookup sandoval.local
+```
+
+---
+
+### 🎫 Ticket #102 — User Account Disabled
+
+Scenario:
+
+- User attempted to log into Client01
+- User received an account disabled message
+
+Troubleshooting completed:
+
+- Opened Active Directory Users and Computers
+- Located affected user account
+- Confirmed account was disabled
+
+Resolution:
+
+- Enabled the user account
+- Required password change after login verification
+
+Verification:
+
+- Confirmed successful authentication
+- Confirmed user password change completed successfully
+
+---
+
+### 🎫 Ticket #103 — Group Policy Issue
+
+Scenario:
+
+- User noticed the system clock was missing from the Windows notification area
+
+Troubleshooting completed:
+
+- Verified the issue on Client01
+- Reviewed local taskbar settings
+- Generated Group Policy Results report:
+
+```cmd
+gpresult /h report.html
+```
+
+Identified applied GPO:
+
+- Control Panel Restrictions
+
+Identified policy:
+
+```text
+Remove the clock from the system notification area
+```
+
+Resolution:
+
+- Updated the Group Policy Object
+- Disabled the unwanted clock removal setting
+- Forced policy refresh:
+
+```cmd
+gpupdate /force
+```
+
+Verification:
+
+- User logged out and back into Client01
+- Confirmed system clock was restored
+
+---
+
 # 🧠 Skills Practiced
 
 ## Active Directory
@@ -286,7 +418,7 @@ Resolved issue:
 - Group Policy Objects (GPOs)
 - Password resets
 - Account lockout troubleshooting
-- Account troubleshooting
+- Disabled account troubleshooting
 
 ## Windows Administration
 - Group Policy Management
@@ -294,6 +426,7 @@ Resolved issue:
 - Desktop configuration management
 - User restrictions
 - Policy troubleshooting
+- Client policy verification
 
 ## Networking
 - DNS troubleshooting
@@ -301,6 +434,7 @@ Resolved issue:
 - DHCP scopes and leases
 - Client/server communication
 - Name resolution testing
+- APIPA troubleshooting
 
 ## Help Desk Skills
 - Ticket documentation
@@ -308,6 +442,7 @@ Resolved issue:
 - Root cause analysis
 - Verification procedures
 - User support workflows
+- Incident documentation
 
 ---
 
