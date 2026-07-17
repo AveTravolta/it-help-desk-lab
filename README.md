@@ -251,6 +251,7 @@ Verified DHCP functionality:
 - Configured Client01 to obtain an IP address automatically
 - Used `ipconfig /all` to verify DHCP lease information
 - Confirmed Client01 successfully received:
+
   - IPv4 Address: 10.1.10.110
   - DHCP Server: 10.1.10.2
   - DNS Server: 10.1.10.2
@@ -409,18 +410,173 @@ Verification:
 
 ---
 
+# Day 12 – Advanced Troubleshooting & Incident Response
+
+Completed:
+
+- Performed a full Help Desk troubleshooting simulation
+- Practiced diagnosing enterprise issues from a user-impact perspective
+- Used a structured troubleshooting methodology:
+
+  - Identify the issue
+  - Gather information
+  - Determine root cause
+  - Apply a fix
+  - Verify resolution
+  - Document the incident
+
+---
+
+## 🎫 Ticket #104 — DNS Misconfiguration Troubleshooting
+
+Scenario:
+
+- Client01 was unable to properly communicate with Active Directory services
+
+Troubleshooting completed:
+
+- Reviewed network configuration using:
+
+```cmd
+ipconfig /all
+```
+
+- Verified DNS settings
+- Tested Domain Controller connectivity:
+
+```cmd
+ping dc01
+```
+
+- Tested name resolution:
+
+```cmd
+nslookup sandoval.local
+```
+
+Identified:
+
+- Client01 DNS configuration was pointing to an incorrect DNS server
+
+Root Cause:
+
+- Client workstation was unable to locate Active Directory services because DNS was not pointing to the Domain Controller DNS server
+
+Resolution:
+
+- Corrected Client01 DNS configuration
+- Restored DNS settings to:
+
+```text
+10.1.10.2
+```
+
+Verification:
+
+- Confirmed successful communication with DC01
+- Confirmed DNS resolution restored
+
+---
+
+## 🎫 Ticket #105 — Group Policy Troubleshooting
+
+Scenario:
+
+- User reported that a company policy was not applying correctly
+
+Troubleshooting completed:
+
+- Verified user and computer placement within Active Directory
+- Reviewed Group Policy links
+- Checked applied policies using:
+
+```cmd
+gpresult /r
+```
+
+- Forced Group Policy refresh:
+
+```cmd
+gpupdate /force
+```
+
+Identified:
+
+- Policy was not applying due to incorrect configuration
+
+Root Cause:
+
+- Group Policy configuration prevented the intended setting from being applied
+
+Resolution:
+
+- Corrected GPO configuration
+- Verified proper policy targeting
+
+Verification:
+
+- Confirmed policy applied successfully on Client01
+
+---
+
+## 🎫 Ticket #106 — Active Directory Login Troubleshooting
+
+Scenario:
+
+- User was unable to authenticate to the domain
+
+Troubleshooting completed:
+
+- Verified account status in Active Directory Users and Computers
+- Checked:
+  - Account enabled status
+  - Password status
+  - Group membership
+  - Domain connectivity
+
+Resolution:
+
+- Corrected account configuration issue
+- Verified user authentication
+
+Verification:
+
+- User successfully logged into Client01 using domain credentials
+
+---
+
+## Day 12 Skills Practiced
+
+- Enterprise troubleshooting workflow
+- DNS troubleshooting
+- Active Directory authentication troubleshooting
+- Group Policy verification
+- Client/server communication testing
+- Incident documentation
+- Root cause analysis
+- Help Desk escalation process
+
+---
+
 # 🧠 Skills Practiced
 
 ## Active Directory
+
 - User account management
 - Security groups
-- Organizational Units
+- Organizational Units (OUs)
 - Group Policy Objects (GPOs)
 - Password resets
 - Account lockout troubleshooting
 - Disabled account troubleshooting
+- Domain authentication troubleshooting
+
+---
 
 ## Windows Administration
+
+- Windows Server configuration
+- Active Directory Domain Services (AD DS)
 - Group Policy Management
 - User Configuration policies
 - Desktop configuration management
@@ -428,22 +584,64 @@ Verification:
 - Policy troubleshooting
 - Client policy verification
 
+---
+
 ## Networking
+
 - DNS troubleshooting
 - DHCP configuration
 - DHCP scopes and leases
 - Client/server communication
 - Name resolution testing
+- IP configuration troubleshooting
 - APIPA troubleshooting
+- Network service verification
+
+---
 
 ## Help Desk Skills
+
 - Ticket documentation
 - Troubleshooting methodology
 - Root cause analysis
+- Incident response
 - Verification procedures
 - User support workflows
-- Incident documentation
+- Escalation processes
+- Technical documentation
 
 ---
 
 # 📂 Repository Structure
+
+---
+
+# 🚀 Future Lab Expansion
+
+Planned additions:
+
+- Azure Active Directory / Microsoft Entra ID
+- Azure Virtual Machines
+- Cloud networking fundamentals
+- Microsoft 365 administration
+- PowerShell automation
+- Backup and recovery testing
+- Additional Help Desk ticket simulations
+- System Administrator level troubleshooting scenarios
+
+---
+
+# 📌 Project Summary
+
+This lab demonstrates practical experience building and supporting a small enterprise Windows environment.
+
+Through hands-on scenarios, I have practiced:
+
+- Managing Active Directory environments
+- Supporting Windows clients
+- Troubleshooting DNS and DHCP issues
+- Managing Group Policy
+- Resolving user access issues
+- Documenting incidents using professional Help Desk workflows
+
+This project represents a transition from foundational IT knowledge into real-world Help Desk, Systems Administration, and Cloud Support skills.
