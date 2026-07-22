@@ -512,11 +512,339 @@ Verification:
 
 ---
 
+---
+
+## Day 14 – PowerShell Basics
+
+Completed:
+
+- Introduced PowerShell as an administration tool for Windows environments
+- Reviewed the difference between Command Prompt and PowerShell
+- Practiced navigating the PowerShell environment
+- Learned how PowerShell uses commands, parameters, and objects
+- Began transitioning from GUI-based administration into command-line management
+
+Practiced basic PowerShell commands:
+
+```powershell
+Get-Command
+```
+
+Used to discover available PowerShell commands.
+
+```powershell
+Get-Help
+```
+
+Used to learn command usage and available parameters.
+
+```powershell
+Get-Process
+```
+
+Used to view running processes on the system.
+
+```powershell
+Get-Service
+```
+
+Used to view Windows services and their current status.
+
+Practiced filtering and displaying specific information:
+
+```powershell
+Get-Process | Select Name
+```
+
+Learned PowerShell pipeline concepts:
+
+```text
+Command output → Pipeline → Next command
+```
+
+Practiced using PowerShell to:
+
+- Retrieve system information
+- Search available commands
+- View running services
+- Understand object-based output
+- Navigate administrative tasks without relying only on GUI tools
+
+Skills practiced:
+
+- PowerShell fundamentals
+- Command discovery
+- Help documentation usage
+- Pipeline basics
+- Windows administration through command line
+
+---
+
+## Day 15 – Active Directory PowerShell Administration
+
+Completed:
+
+- Learned how to manage Active Directory using PowerShell instead of relying only on Active Directory Users and Computers (ADUC)
+- Reviewed the Active Directory PowerShell module
+- Practiced retrieving, searching, filtering, modifying, and managing Active Directory user accounts
+- Learned how PowerShell improves efficiency, reporting, and automation for system administrators
+
+Verified the Active Directory PowerShell module:
+
+```powershell
+Get-Module ActiveDirectory -ListAvailable
+```
+
+Imported the Active Directory module:
+
+```powershell
+Import-Module ActiveDirectory
+```
+
+Explored available Active Directory commands:
+
+```powershell
+Get-Command -Module ActiveDirectory
+```
+
+Located user management commands:
+
+```powershell
+Get-Command *ADUser*
+```
+
+Practiced working with common Active Directory cmdlets:
+
+- `Get-ADUser`
+- `Set-ADUser`
+- `New-ADUser`
+- `Enable-ADAccount`
+- `Disable-ADAccount`
+- `Set-ADAccountPassword`
+
+Attempted to use PowerShell help:
+
+```powershell
+Get-Help Get-ADUser
+```
+
+The lab environment did not have downloadable PowerShell help content installed because the server does not have internet access.
+
+Used built-in syntax information instead:
+
+```powershell
+Get-Command Get-ADUser -Syntax
+```
+
+Practiced retrieving Active Directory users:
+
+```powershell
+Get-ADUser -Filter *
+```
+
+Displayed user names:
+
+```powershell
+Get-ADUser -Filter * | Select Name
+```
+
+Displayed usernames:
+
+```powershell
+Get-ADUser -Filter * | Select Name,SamAccountName
+```
+
+Retrieved a specific user:
+
+```powershell
+Get-ADUser -Identity username
+```
+
+Viewed additional Active Directory attributes:
+
+```powershell
+Get-ADUser -Identity username -Properties *
+```
+
+Learned that Active Directory user objects contain many attributes including:
+
+- Username
+- Department
+- Office
+- City
+- Job Title
+- Account Status
+- Logon Information
+
+Practiced filtering Active Directory users:
+
+```powershell
+Get-ADUser -Filter "Enabled -eq 'False'"
+```
+
+Learned PowerShell filtering structure:
+
+```text
+Property + Operator + Value
+```
+
+Examples:
+
+```text
+Enabled -eq 'True'
+Department -eq 'IT'
+City -eq 'Long Beach'
+```
+
+Modified Active Directory user attributes using:
+
+```powershell
+Set-ADUser
+```
+
+Used `-WhatIf` to preview changes before applying modifications:
+
+```powershell
+Set-ADUser username -City "Long Beach" -WhatIf
+```
+
+Modified user attributes including:
+
+- City
+- Office
+- Department
+- Job Title
+
+Verified changes:
+
+```powershell
+Get-ADUser username -Properties *
+```
+
+Created a new Active Directory user account through PowerShell:
+
+```powershell
+New-ADUser -Name "PowerShell User" -GivenName "PowerShell" -Surname "User" -SamAccountName psuser -UserPrincipalName psuser@sandoval.local -AccountPassword (ConvertTo-SecureString "Password123!" -AsPlainText -Force) -Enabled $true
+```
+
+Verified the account:
+
+```powershell
+Get-ADUser psuser
+```
+
+Practiced Active Directory account management:
+
+Disabled an account:
+
+```powershell
+Disable-ADAccount psuser
+```
+
+Verified account status:
+
+```powershell
+Get-ADUser psuser -Properties Enabled
+```
+
+Re-enabled the account:
+
+```powershell
+Enable-ADAccount psuser
+```
+
+Verified:
+
+```powershell
+Get-ADUser psuser -Properties Enabled
+```
+
+Reset user passwords using PowerShell:
+
+```powershell
+Set-ADAccountPassword psuser -Reset -NewPassword (ConvertTo-SecureString "NewPassword123!" -AsPlainText -Force)
+```
+
+Created Active Directory reports by filtering users and exporting results to CSV:
+
+```powershell
+Get-ADUser -Filter "Enabled -eq 'False'" | Select Name,SamAccountName,Enabled | Export-Csv C:\UsersDisabled.csv -NoTypeInformation
+```
+
+This demonstrated a common administrative workflow:
+
+- Retrieve Active Directory objects
+- Filter based on object properties
+- Select relevant information
+- Export results for reporting
+
+---
+
+## 🎫 Ticket #110 — User Unable to Log In
+
+Scenario:
+
+- User **Max Homa** reported being unable to log into their workstation
+- The workstation indicated that the user's Active Directory account was disabled
+
+Troubleshooting completed:
+
+- Verified the user's identity in Active Directory
+- Reviewed user properties using PowerShell ISE
+- Confirmed the account was disabled
+
+Checked account status:
+
+```powershell
+Get-ADUser maxhoma -Properties Enabled
+```
+
+Root Cause:
+
+- User account was accidentally disabled during account cleanup
+
+Resolution:
+
+Enabled the user account using PowerShell:
+
+```powershell
+Enable-ADAccount maxhoma
+```
+
+Verification:
+
+```powershell
+Get-ADUser maxhoma -Properties Enabled
+```
+
+Confirmed:
+
+- Account status changed to enabled
+- User access was restored successfully
+
+---
+
+## Day 15 Skills Practiced
+
+- Active Directory PowerShell administration
+- User account management
+- Searching and filtering Active Directory objects
+- User attribute modification
+- Account lifecycle management
+- Password management
+- CSV reporting
+- PowerShell pipeline usage
+- Help Desk troubleshooting workflow
+
+---
+
 # 🧠 Skills Practiced
 
 ## Active Directory
 
+- Active Directory Domain Services (AD DS)
 - User account management
+- User creation and modification
 - Security groups
 - Organizational Units (OUs)
 - Group Policy Objects (GPOs)
@@ -526,6 +854,24 @@ Verification:
 - Domain authentication troubleshooting
 - Group membership troubleshooting
 - User access management
+- Active Directory attribute management
+
+---
+
+## PowerShell Administration
+
+- PowerShell fundamentals
+- Active Directory PowerShell module
+- Command discovery and syntax usage
+- Object filtering
+- Pipeline usage
+- User retrieval with `Get-ADUser`
+- User modification with `Set-ADUser`
+- User creation with `New-ADUser`
+- Account enable/disable management
+- Password management
+- CSV reporting and data export
+- Command-line administration workflows
 
 ---
 
@@ -533,12 +879,15 @@ Verification:
 
 - Windows Server configuration
 - Active Directory Domain Services (AD DS)
+- DNS Server management
+- DHCP Server configuration
 - Group Policy Management
 - User Configuration policies
 - Desktop configuration management
 - User restrictions
 - Policy troubleshooting
 - Client policy verification
+- Windows client/server administration
 
 ---
 
@@ -552,6 +901,7 @@ Verification:
 - IP configuration troubleshooting
 - APIPA troubleshooting
 - Network service verification
+- Basic network troubleshooting methodology
 
 ---
 
@@ -563,14 +913,29 @@ Verification:
 - Incident response
 - Verification procedures
 - Identity and access troubleshooting
+- User account troubleshooting
 - Security group administration
 - User support workflows
 - Escalation processes
 - Technical documentation
+- Incident lifecycle management
 
 ---
 
 # 📂 Repository Structure
+
+Each lab day includes:
+
+- Main README documentation
+- Configuration screenshots
+- Troubleshooting notes
+- Realistic Help Desk ticket scenarios
+- Ticket documentation containing:
+  - Issue
+  - Investigation
+  - Root Cause
+  - Resolution
+  - Verification
 
 ---
 
@@ -578,28 +943,33 @@ Verification:
 
 Planned additions:
 
-- Azure Active Directory / Microsoft Entra ID
+- Microsoft Entra ID (Azure Active Directory)
 - Azure Virtual Machines
-- Cloud networking fundamentals
+- Azure networking fundamentals
 - Microsoft 365 administration
 - PowerShell automation
+- Cloud identity management
 - Backup and recovery testing
 - Additional Help Desk ticket simulations
 - System Administrator level troubleshooting scenarios
+- Cloud administration workflows
 
 ---
 
 # 📌 Project Summary
 
-This lab demonstrates practical experience building and supporting a small enterprise Windows environment.
+This lab demonstrates practical experience building, managing, and supporting a small enterprise Windows environment.
 
 Through hands-on scenarios, I have practiced:
 
-- Managing Active Directory environments
-- Supporting Windows clients
-- Troubleshooting DNS and DHCP issues
-- Managing Group Policy
-- Resolving user access issues
-- Documenting incidents using professional Help Desk workflows
+- Building and maintaining an Active Directory domain
+- Managing Windows Server roles and services
+- Supporting Windows client machines
+- Troubleshooting DNS, DHCP, and authentication issues
+- Managing users, groups, and permissions
+- Administering Active Directory through PowerShell
+- Creating reports and automating administrative tasks
+- Resolving user issues through professional Help Desk workflows
+- Documenting incidents using real-world troubleshooting methodology
 
-This project represents a transition from foundational IT knowledge into real-world Help Desk, Systems Administration, and Cloud Support skills.
+This project represents a transition from foundational IT knowledge into practical Help Desk, Systems Administration, and Cloud Support skills.
