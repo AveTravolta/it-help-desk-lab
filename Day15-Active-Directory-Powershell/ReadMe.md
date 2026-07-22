@@ -316,33 +316,59 @@ This demonstrated a common administrative workflow:
 
 ## Issue
 
-A user account was accidentally disabled during account cleanup.
-
-The user reported they were unable to sign in.
+User **Max Homa** reported that he was unable to log in to his workstation. The system indicated that his Active Directory account was disabled.
 
 ---
 
-## Troubleshooting Steps
+## Investigation
 
-1. Checked the user's Active Directory account status.
+- Confirmed the identity of the user by locating the **Max Homa** Active Directory account.
+- Reviewed the user's account properties using PowerShell ISE.
+- Verified that the account status showed as disabled.
 
-```powershell
-Get-ADUser username -Properties Enabled
-```
-
-2. Confirmed the account was disabled.
-
-3. Re-enabled the account.
+Command used:
 
 ```powershell
-Enable-ADAccount username
+Get-ADUser maxhoma -Properties Enabled
 ```
 
-4. Verified the account was active again.
+---
+
+## Root Cause
+
+A coworker accidentally disabled the **Max Homa** Active Directory account while performing user account cleanup.
+
+---
+
+## Resolution
+
+Enabled the user's Active Directory account using PowerShell.
+
+Command used:
 
 ```powershell
-Get-ADUser username -Properties Enabled
+Enable-ADAccount maxhoma
 ```
+
+---
+
+## Verification
+
+Confirmed that the account was successfully enabled by checking the user's Active Directory properties.
+
+Command used:
+
+```powershell
+Get-ADUser maxhoma -Properties Enabled
+```
+
+The account status was verified as enabled, allowing the user to log in again.
+
+---
+
+## Outcome
+
+User account access was restored successfully. The issue was resolved by identifying the disabled account, correcting the account status, and verifying the change through Active Directory PowerShell.
 
 ---
 
