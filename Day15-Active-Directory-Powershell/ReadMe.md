@@ -316,27 +316,27 @@ This demonstrated a common administrative workflow:
 
 ## Issue
 
-User **Max Homa** reported that he was unable to log in to his workstation. The system indicated that his Active Directory account was disabled.
+User **Max** reported that he was unable to log in to his workstation. The system indicated that his Active Directory account was disabled.
 
 ---
 
 ## Investigation
 
-- Confirmed the identity of the user by locating the **Max Homa** Active Directory account.
+- Confirmed the identity of the user by locating the **Max** Active Directory account.
 - Reviewed the user's account properties using PowerShell ISE.
 - Verified that the account status showed as disabled.
 
 Command used:
 
 ```powershell
-Get-ADUser maxhoma -Properties Enabled
+Get-ADUser max -Properties Enabled
 ```
 
 ---
 
 ## Root Cause
 
-A coworker accidentally disabled the **Max Homa** Active Directory account while performing user account cleanup.
+A coworker accidentally disabled the **Max** Active Directory account while performing user account cleanup.
 
 ---
 
@@ -347,7 +347,7 @@ Enabled the user's Active Directory account using PowerShell.
 Command used:
 
 ```powershell
-Enable-ADAccount maxhoma
+Enable-ADAccount max
 ```
 
 ---
@@ -359,7 +359,7 @@ Confirmed that the account was successfully enabled by checking the user's Activ
 Command used:
 
 ```powershell
-Get-ADUser maxhoma -Properties Enabled
+Get-ADUser maxho -Properties Enabled
 ```
 
 The account status was verified as enabled, allowing the user to log in again.
