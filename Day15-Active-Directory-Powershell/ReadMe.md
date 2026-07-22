@@ -359,7 +359,7 @@ Confirmed that the account was successfully enabled by checking the user's Activ
 Command used:
 
 ```powershell
-Get-ADUser maxho -Properties Enabled
+Get-ADUser max -Properties Enabled
 ```
 
 The account status was verified as enabled, allowing the user to log in again.
