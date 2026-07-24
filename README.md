@@ -838,6 +838,69 @@ Confirmed:
 
 ---
 
+## Day 16 – File Shares & NTFS Permissions
+
+Completed:
+
+- Learned how Windows Server manages file access using NTFS Permissions and Share Permissions
+- Created department-based file share folders:
+  - HR
+  - IT
+  - Sales
+- Created and used Active Directory security groups:
+  - HR Staff
+  - IT Staff
+  - Sales Staff
+- Practiced assigning permissions through security groups instead of individual users
+- Learned how permissions are inherited and how inheritance can be disabled
+- Tested how NTFS Permissions and Share Permissions combine to determine effective access
+
+Covered NTFS Permission concepts:
+
+- Read
+- Modify
+- Full Control
+- Permission inheritance
+- Cumulative permissions
+- Deny permissions
+
+Covered Share Permission concepts:
+
+- Creating network shares
+- Configuring Share Permissions
+- Understanding Share Permissions vs NTFS Permissions
+- Determining effective permissions
+
+Completed troubleshooting scenario:
+
+- User had Modify permissions through NTFS
+- User was restricted to Read access through Share Permissions
+- Identified Share Permissions as the limiting factor
+- Updated Share Permissions and verified the user could modify files successfully
+
+Documented troubleshooting workflow:
+
+- Issue
+- Investigation
+- Root Cause
+- Resolution
+- Verification
+
+---
+
+## Day 16 Skills Practiced
+
+- Windows Server File Shares
+- NTFS Permissions
+- Share Permissions
+- Active Directory Security Groups
+- File and Folder Access Management
+- Permission Inheritance
+- Effective Access Troubleshooting
+- User Access Troubleshooting
+
+---
+
 # 🧠 Skills Practiced
 
 ## Active Directory
@@ -855,6 +918,9 @@ Confirmed:
 - Group membership troubleshooting
 - User access management
 - Active Directory attribute management
+- Security group-based access management
+- File access management
+- User permissions troubleshooting
 
 ---
 
@@ -887,7 +953,10 @@ Confirmed:
 - User restrictions
 - Policy troubleshooting
 - Client policy verification
-- Windows client/server administration
+- Windows client/server 
+- Windows Server File Shares
+- NTFS and Share Permission management
+- File and folder security administration
 
 ---
 
@@ -919,6 +988,9 @@ Confirmed:
 - Escalation processes
 - Technical documentation
 - Incident lifecycle management
+- File access troubleshooting
+- Permission troubleshooting
+- User resource access issues
 
 ---
 
