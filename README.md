@@ -901,6 +901,61 @@ Documented troubleshooting workflow:
 
 ---
 
+## Day 17 – Shared Folders & Network Shares
+
+### Completed:
+
+Created a centralized network share to simulate a company file server
+
+Configured the following shared folder:
+
+CompanyShares
+
+Reviewed the purpose of Windows Network Shares and how organizations centrally store files for users across a network
+
+Configured Share Permissions for Domain Users
+
+Disabled NTFS permission inheritance and converted inherited permissions into explicit permissions
+
+Assigned NTFS permissions using Active Directory security groups:
+
+- HR Staff – Read
+- Sales Staff – Read
+- IT Staff – Modify
+
+Verified user access by connecting to the shared folder from Client01 using its UNC path
+
+Tested access using multiple Active Directory user accounts
+
+Confirmed:
+
+- HR users could browse folders and open files
+- HR users could not create, modify, or delete files
+- IT users could create, edit, save, and delete files as expected
+
+Completed troubleshooting scenario:
+
+Simulated a file access issue by removing the IT Staff group's NTFS permissions
+
+Investigated:
+
+- Share Permissions
+- NTFS Permissions
+- Active Directory group membership
+- Effective user access
+
+Resolved issue:
+
+Restored the IT Staff group's Modify permissions
+
+Verified successful access by:
+
+- Logging back into Client01
+- Opening the network share
+- Creating and editing a test text file
+
+---
+
 # 🧠 Skills Practiced
 
 ## Active Directory
@@ -957,6 +1012,10 @@ Documented troubleshooting workflow:
 - Windows Server File Shares
 - NTFS and Share Permission management
 - File and folder security administration
+- Windows Network Shares
+- Shared folder administration
+- Share permission configuration
+- Permission inheritance management
 
 ---
 
@@ -971,6 +1030,8 @@ Documented troubleshooting workflow:
 - APIPA troubleshooting
 - Network service verification
 - Basic network troubleshooting methodology
+- UNC path navigation
+- Network share connectivity
 
 ---
 
@@ -991,6 +1052,9 @@ Documented troubleshooting workflow:
 - File access troubleshooting
 - Permission troubleshooting
 - User resource access issues
+- Shared folder troubleshooting
+- Network share access verification
+- Access Denied troubleshooting
 
 ---
 
@@ -1043,5 +1107,9 @@ Through hands-on scenarios, I have practiced:
 - Creating reports and automating administrative tasks
 - Resolving user issues through professional Help Desk workflows
 - Documenting incidents using real-world troubleshooting methodology
+- Creating and managing Windows Network Shares
+- Configuring Share and NTFS permissions
+- Verifying user access to shared resources
+- Troubleshooting file share and permission issues
 
 This project represents a transition from foundational IT knowledge into practical Help Desk, Systems Administration, and Cloud Support skills.
