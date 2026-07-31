@@ -956,6 +956,253 @@ Verified successful access by:
 
 ---
 
+# Day 18 – Print Services & Network Drive Management
+
+## Completed:
+
+Learned how Windows Server manages centralized printing services in an Active Directory environment
+
+Reviewed Windows Print Server concepts:
+
+- Print Server role
+- Shared printers
+- Printer permissions
+- Printer deployment
+- Print queue management
+- Print Spooler troubleshooting
+
+Configured and tested a shared printer environment:
+
+Created a shared printer on DC01:
+
+```
+HR-Printer
+```
+
+Verified users could access the shared printer from Client01 using the network printer path:
+
+```
+\\DC01\HR-Printer
+```
+
+Reviewed printer permission concepts:
+
+- Print
+- Manage Documents
+- Manage Printer
+
+Practiced assigning printer access based on user roles and security groups
+
+---
+
+## 🎫 Ticket #113 — Printer Offline
+
+### Scenario:
+
+User reported they were unable to print because the office printer appeared offline.
+
+### Troubleshooting completed:
+
+Investigated common printer connectivity issues:
+
+- Verified printer availability
+- Reviewed printer status
+- Checked Print Spooler service
+- Reviewed printer communication troubleshooting steps
+
+Verified Print Spooler status:
+
+```powershell
+Get-Service Spooler
+```
+
+### Resolution:
+
+Reviewed Print Spooler troubleshooting procedures:
+
+```powershell
+Restart-Service Spooler
+```
+
+Verified printer availability after troubleshooting.
+
+---
+
+# 🎫 Ticket #114 — Printer Queue Problems
+
+## Scenario:
+
+User reported:
+
+"Documents are stuck printing."
+
+## Troubleshooting completed:
+
+Investigated:
+
+- Stuck print jobs
+- Failed documents
+- Print queue issues
+- Print Spooler problems
+
+Reviewed print queue cleanup process:
+
+Stop Print Spooler:
+
+```powershell
+Stop-Service Spooler
+```
+
+Remove stuck print jobs:
+
+```
+C:\Windows\System32\spool\PRINTERS
+```
+
+Start Print Spooler:
+
+```powershell
+Start-Service Spooler
+```
+
+Verified the print queue was cleared and printing functionality was restored.
+
+---
+
+# 🌐 Network Drive Mapping & Group Policy
+
+Learned how organizations provide employees access to department resources using mapped network drives.
+
+Reviewed:
+
+- UNC paths
+- Network shares
+- Drive letters
+- Group Policy Preferences
+- User-based drive deployment
+
+Example:
+
+Server folder:
+
+```
+C:\CompanyShares\IT
+```
+
+Network share:
+
+```
+\\DC01\IT
+```
+
+Mapped drive:
+
+```
+I:
+```
+
+Created and tested a Group Policy Object:
+
+```
+IT Drive Mapping
+```
+
+Configured:
+
+```
+User Configuration
+    |
+    └── Preferences
+          |
+          └── Windows Settings
+                |
+                └── Drive Maps
+```
+
+Created mapped drive:
+
+```
+I: → \\DC01\IT
+```
+
+Tested deployment from Client01.
+
+Verified:
+
+- User could access the mapped drive
+- Network share permissions were working
+- Group Policy successfully deployed the resource
+
+---
+
+# Group Policy Troubleshooting Practice
+
+Practiced troubleshooting mapped drive deployment issues.
+
+Reviewed:
+
+- GPO linking
+- Security Filtering
+- User group membership
+- Group Policy processing
+- Drive mapping actions
+
+Commands used:
+
+Force Group Policy update:
+
+```cmd
+gpupdate /force
+```
+
+Review applied policies:
+
+```cmd
+gpresult /r
+```
+
+Generated Group Policy reports:
+
+```cmd
+gpresult /h report.html
+```
+
+---
+
+# Day 18 Skills Practiced
+
+Windows Print Server Administration
+
+Shared printer configuration
+
+Printer permission management
+
+Printer troubleshooting
+
+Print queue troubleshooting
+
+Print Spooler administration
+
+Windows Network Shares
+
+UNC path navigation
+
+Mapped network drives
+
+Group Policy Preferences
+
+Drive deployment through Group Policy
+
+User resource access troubleshooting
+
+Security group-based resource access
+
+PowerShell service management
+
+Help Desk ticket troubleshooting workflow
+
+---
+
 # 🧠 Skills Practiced
 
 ## Active Directory
@@ -993,6 +1240,9 @@ Verified successful access by:
 - Password management
 - CSV reporting and data export
 - Command-line administration workflows
+- Windows service management using PowerShell
+- Service status verification
+- Restarting administrative services
 
 ---
 
@@ -1016,6 +1266,14 @@ Verified successful access by:
 - Shared folder administration
 - Share permission configuration
 - Permission inheritance management
+- Print Server management
+- Windows Print Services
+- Shared printer configuration
+- Printer permissions
+- Print queue administration
+- Print Spooler troubleshooting
+- Group Policy Preferences
+- Mapped drive deployment
 
 ---
 
@@ -1032,6 +1290,10 @@ Verified successful access by:
 - Basic network troubleshooting methodology
 - UNC path navigation
 - Network share connectivity
+- Network drive deployment
+- UNC path management
+- Department resource access
+- Mapped drive administration
 
 ---
 
@@ -1055,6 +1317,12 @@ Verified successful access by:
 - Shared folder troubleshooting
 - Network share access verification
 - Access Denied troubleshooting
+- Printer troubleshooting
+- Printer connectivity troubleshooting
+- Print queue troubleshooting
+- User resource access issues
+- Mapped drive troubleshooting
+- Group Policy troubleshooting
 
 ---
 
