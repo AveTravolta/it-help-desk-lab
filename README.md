@@ -1203,6 +1203,200 @@ Help Desk ticket troubleshooting workflow
 
 ---
 
+# Day 19 – Week 3 Help Desk Shift
+
+Completed:
+
+* Simulated a full Level 1 Help Desk shift
+* Reviewed PowerShell, Active Directory, file shares, NTFS permissions, Share permissions, printers, and network resources
+* Practiced investigating issues before making changes
+* Practiced identifying root causes and determining appropriate resolutions
+* Applied least-privilege principles and security group-based access
+* Documented and resolved five simulated Help Desk tickets
+
+---
+
+## 🎫 Ticket #115 — Cannot Modify Shared Folder
+
+### Scenario:
+
+User could access the Sales shared folder but could not modify files.
+
+### Troubleshooting completed:
+
+* Verified the user and account status
+* Confirmed the user was logged into the domain
+* Confirmed Sales Staff group membership
+* Reviewed the Sales folder NTFS permissions
+* Identified that Sales Staff did not have the appropriate NTFS Modify permission
+
+### Resolution:
+
+* Granted the Sales Staff group **Modify** NTFS permission on the Sales folder
+
+### Verification:
+
+* User logged out and back into Client01
+* Confirmed access to the Sales shared folder
+* Confirmed the user could create and modify files
+
+---
+
+## 🖨️ Ticket #116 — Printer Offline
+
+### Scenario:
+
+User reported that the Sales Printer showed as offline and they were unable to print.
+
+### Troubleshooting completed:
+
+* Verified the user and account status
+* Confirmed the user was logged into the domain
+* Confirmed Sales Staff group membership
+* Reviewed Sales Printer permissions
+* Identified that Sales Staff did not have the appropriate **Print** permission
+
+### Resolution:
+
+* Granted the Sales Staff group **Print** permission on the Sales Printer
+
+### Verification:
+
+* User logged out and back into Client01
+* Confirmed the Sales Printer was accessible
+* Successfully submitted a test print job
+* Confirmed the appropriate Print permission was applied
+
+> **Lab Note:** The lab does not contain a physical printer, so physical printing could not be verified. The test confirmed that the user could access the shared printer and submit a print job.
+
+---
+
+## 👤 Ticket #117 — User Needs Access
+
+### Scenario:
+
+An HR Staff user requested Modify access to the Sales shared folder.
+
+### Troubleshooting completed:
+
+* Verified the user
+* Confirmed the user was logged into the domain
+* Confirmed HR Staff group membership
+* Reviewed the user's existing Sales folder permissions
+* Confirmed management approval for Sales folder access
+* Determined the user only required occasional access
+
+### Resolution:
+
+Created a dedicated security group:
+
+```text
+HRtoSales
+```
+
+Configured access using group-based permissions:
+
+* Added John Smith to `HRtoSales`
+* Granted `HRtoSales` **NTFS Modify** permission on the Sales folder
+* Granted `HRtoSales` appropriate **Share Change** permission
+
+This avoided granting the user unnecessary access through the broader Sales Staff group.
+
+### Verification:
+
+* User logged out and back into Client01
+* Confirmed access to the Sales shared folder
+* Confirmed the user could create a new text file
+* Confirmed the user had the required Modify access
+
+---
+
+## 🔐 Ticket #118 — Wrong Permissions
+
+### Scenario:
+
+User from the Sales Staff group could access the Sales folder but could not modify files.
+
+### Troubleshooting completed:
+
+* Verified the user
+* Confirmed domain login
+* Confirmed Sales Staff group membership
+* Checked NTFS permissions
+* Checked Share permissions
+* Determined that NTFS allowed Modify access while Share permissions only allowed Read access
+
+### Resolution:
+
+Changed the Sales Staff Share permission from:
+
+```text
+Read
+```
+
+to:
+
+```text
+Change
+```
+
+The existing NTFS Modify permission remained in place.
+
+### Verification:
+
+* User logged out and back into Client01
+* Confirmed access to the Sales shared folder
+* Confirmed the user could create a new text file
+* Confirmed the user could modify and save files
+
+---
+
+## 🔑 Ticket #119 — User Password Reset
+
+### Scenario:
+
+User reported being unable to log in because they had forgotten their password.
+
+### Troubleshooting completed:
+
+* Verified the user's identity using department and manager information
+* Verified the correct user account
+* Confirmed the user was attempting to log into the domain
+* Checked account status
+* Confirmed the account was locked
+
+### Resolution:
+
+* Reset the user's password to a temporary password
+* Unlocked the user's account
+* Required the user to create a new password at next login
+
+### Verification:
+
+* User logged in using the temporary password
+* Confirmed the user was prompted to create a new password
+* User logged in again using the newly created password
+* Confirmed successful access to the domain account
+
+---
+
+## Day 19 Help Desk Skills Practiced
+
+* Investigating issues before making changes
+* Root cause identification
+* NTFS permission troubleshooting
+* Share permission troubleshooting
+* Security group-based access management
+* Least-privilege access
+* Printer permission troubleshooting
+* Active Directory account troubleshooting
+* Password resets
+* Account unlocks
+* Professional Help Desk ticket documentation
+* Resolution verification
+
+---
+
 # 🧠 Skills Practiced
 
 ## Active Directory
