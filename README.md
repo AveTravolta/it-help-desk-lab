@@ -1397,6 +1397,255 @@ User reported being unable to log in because they had forgotten their password.
 
 ---
 
+# Day 21 – Microsoft 365 Administration & Help Desk
+
+Completed:
+
+* Introduced Microsoft 365 cloud administration through the Microsoft 365 Admin Center
+* Learned how Microsoft 365 is administered through a centralized cloud-based management portal
+* Explored the Microsoft 365 Admin Center dashboard and navigation
+* Reviewed how administrators manage users, licenses, applications, groups, and service health
+* Created and managed Microsoft 365 user accounts
+* Assigned Microsoft 365 Business Standard licenses
+* Reviewed individual user account details and available administrative actions
+* Reviewed Microsoft 365 applications and services assigned to users
+* Practiced managing Microsoft Teams access
+* Reviewed Microsoft 365 service health for troubleshooting cloud service issues
+* Practiced distinguishing between a user account issue, license/service issue, application issue, and Microsoft service outage
+* Reviewed Microsoft 365 Groups and their relationship to Teams
+* Learned the distinction between Microsoft 365 Groups, Microsoft Teams, Security Groups, and Distribution Lists
+* Reviewed Microsoft 365 administrator roles and the concept of delegated administrative access
+* Reviewed user templates and how they can simplify account provisioning
+* Practiced applying a structured Help Desk troubleshooting workflow to cloud-based services
+
+---
+
+## 👤 Microsoft 365 User Administration
+
+Practiced creating a new Microsoft 365 user account and configuring basic access.
+
+Reviewed:
+
+* User creation
+* Display name
+* Username
+* Email address
+* Department
+* Job title
+* Account status
+* Password configuration
+* Password reset options
+* Require password change at next sign-in
+* Assigned licenses
+* Assigned applications and services
+
+---
+
+## 💳 Microsoft 365 Licensing
+
+Worked with a Microsoft 365 Business Standard license.
+
+Reviewed:
+
+* Microsoft 365 Business licensing
+* License assignment
+* Available services within a license
+* Application/service enablement
+* How licensing affects user access
+
+Verified that users could be assigned services including:
+
+* Microsoft Teams
+* Outlook / Exchange Online
+* OneDrive
+* Microsoft 365 applications
+
+---
+
+## 👥 Microsoft 365 Groups & Access Management
+
+Reviewed the purpose and differences between Microsoft 365 group types.
+
+Learned that **Microsoft 365 Groups** can provide shared resources such as:
+
+* Shared mailbox
+* Shared calendar
+* Shared document library
+* Group conversations
+* Shared collaboration resources
+
+Reviewed the relationship between Microsoft 365 Groups and Microsoft Teams.
+
+Learned that Teams can add additional collaboration capabilities to a Microsoft 365 Group, including:
+
+* Teams channels
+* Team-based collaboration
+* Meetings
+* Chat
+* Additional Teams functionality
+
+Reviewed other group types:
+
+### Security Groups
+
+Used primarily to assign permissions and control access to resources.
+
+### Distribution Lists
+
+Used primarily for sending email communications to a defined group of recipients.
+
+### Microsoft 365 Groups
+
+Designed around collaboration and shared Microsoft 365 resources.
+
+### Microsoft Teams
+
+Provides collaboration capabilities built around Microsoft 365 Groups and adds Teams-specific functionality.
+
+Also reviewed:
+
+* Group owners
+* Group members
+* Group membership
+* Team ownership
+* Team membership
+
+---
+
+## 🏢 Microsoft 365 Administrator Roles
+
+Reviewed the concept of administrative roles within Microsoft 365.
+
+Learned that administrators can be assigned specific roles based on their responsibilities rather than automatically receiving unrestricted administrative access.
+
+Reviewed the importance of:
+
+* Role-based administration
+* Least privilege
+* Limiting administrative access to what is required for a user's job responsibilities
+
+---
+
+## 🏥 Microsoft 365 Service Health
+
+Practiced using Microsoft 365 Service Health as part of a troubleshooting workflow.
+
+Used the following troubleshooting process:
+
+```text
+User reports issue
+        ↓
+Verify user's account
+        ↓
+Verify license
+        ↓
+Verify required application/service
+        ↓
+Check Microsoft 365 Service Health
+        ↓
+Determine whether issue is user-side or service-side
+        ↓
+Troubleshoot / Resolve
+        ↓
+Verify functionality
+        ↓
+Document ticket
+```
+
+Learned that checking service health can prevent unnecessary troubleshooting when Microsoft is experiencing a widespread service issue.
+
+---
+
+# 🎫 Ticket #120 — User Cannot Access Microsoft Teams
+
+## Scenario
+
+John Smith reported:
+
+> "I can't access Microsoft Teams. I was told I should have access."
+
+## Investigation
+
+* Located John Smith in Microsoft 365 Admin Center
+* Verified the user's Microsoft 365 license
+* Reviewed Apps and Services assigned to the account
+* Confirmed Microsoft Teams was enabled
+* Asked the user what occurred when attempting to open Teams
+* User reported Teams opened briefly and then closed without displaying an error
+* Confirmed other Microsoft 365 applications such as Outlook and OneDrive were functioning
+* Checked Microsoft 365 Service Health
+* Confirmed Microsoft Teams was reporting as healthy
+
+## Resolution
+
+* Had the user attempt to access Teams through the Microsoft 365 website
+* Had the user restart their computer
+* User successfully accessed Microsoft Teams after restarting
+
+## Root Cause
+
+* Local Teams application/session issue requiring a workstation restart
+
+## Verification
+
+* User successfully opened Microsoft Teams
+* Confirmed Teams was functioning normally after restart
+
+---
+
+# 🎫 Ticket #121 — New Employee Outlook & Teams Access
+
+## Scenario
+
+Sarah Sherman reported:
+
+> "Sarah started today but cannot access Outlook or Microsoft Teams. She should have access."
+
+## Investigation
+
+* Searched Microsoft 365 Active Users for Sarah Sherman
+* Determined that the new employee did not have an existing Microsoft 365 account
+
+## Resolution
+
+* Created a new Microsoft 365 user account for Sarah Sherman
+* Assigned the Microsoft 365 Business Standard license
+* Granted access to Microsoft Teams
+
+## Root Cause
+
+* New employee account had not yet been created in Microsoft 365
+
+## Verification
+
+* Confirmed Sarah's account was successfully created
+* Confirmed the Microsoft 365 license was assigned
+* Confirmed Microsoft Teams was enabled for the user
+
+## Day 21 Skills Practiced
+
+* Microsoft 365 Admin Center navigation
+* Microsoft 365 user administration
+* Cloud-based user provisioning
+* Microsoft 365 Business Standard licensing
+* Application and service management
+* Microsoft Teams administration
+* Microsoft 365 Groups
+* Security Groups
+* Distribution Lists
+* User password management
+* Password reset workflows
+* Microsoft 365 administrator roles
+* Role-based access concepts
+* Service Health investigation
+* Cloud application troubleshooting
+* New employee provisioning
+* Help Desk ticket documentation
+* Cloud-based troubleshooting methodology
+* Issue → Investigation → Root Cause → Resolution → Verification workflow
+
+---
+
 # 🧠 Skills Practiced
 
 ## Active Directory
@@ -1491,9 +1740,50 @@ User reported being unable to log in because they had forgotten their password.
 
 ---
 
+## Microsoft 365 Administration
+
+Microsoft 365 Admin Center
+Microsoft 365 cloud administration
+Microsoft 365 user administration
+Microsoft 365 user provisioning
+Microsoft 365 Business Standard licensing
+License assignment and verification
+Microsoft 365 application/service management
+Microsoft Teams administration
+Microsoft 365 Service Health
+Microsoft 365 account troubleshooting
+Microsoft 365 password management
+Microsoft 365 password reset workflows
+Microsoft 365 user account status
+Microsoft 365 Groups
+Security Groups
+Distribution Lists
+Group ownership and membership
+Microsoft 365 administrator roles
+Role-based access concepts
+Least-privilege administrative access
+New employee account provisioning
+Cloud application troubleshooting
+Cloud / Cloud Support Skills
+Cloud-based user administration
+SaaS administration concepts
+Microsoft 365 cloud services
+Cloud application access troubleshooting
+Cloud service health monitoring
+License-based service access
+Cloud identity and access concepts
+User provisioning and account lifecycle management
+Cloud-based Help Desk troubleshooting
+Differentiating user-side issues from service-side outages
+Cloud service troubleshooting methodology
+
+--
+
 ## Help Desk Skills
 
 - Ticket documentation
+- Microsoft 365 user administration
+- Microsoft 365 license troubleshooting
 - Troubleshooting methodology
 - Root cause analysis
 - Incident response
