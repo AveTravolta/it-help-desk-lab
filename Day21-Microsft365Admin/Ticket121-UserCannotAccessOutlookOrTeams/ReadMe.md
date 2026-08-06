@@ -25,13 +25,3 @@ Sarah's Microsoft 365 user account had not been provisioned, preventing her from
 * Had Sarah sign in and verify access to **Outlook**.
 * Had Sarah sign in and verify access to **Microsoft Teams**.
 * User confirmed that both services were accessible and functioning normally.
-
-### 📸 Evidence
-
-**Screenshot 1 — New User Account Created**
-
-Shows the newly created Sarah Sherman Microsoft 365 account.
-
-**Screenshot 2 — Microsoft Teams Enabled**
-
-Shows Microsoft Teams enabled for Sarah's account.
