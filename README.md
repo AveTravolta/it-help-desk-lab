@@ -1646,6 +1646,268 @@ Sarah Sherman reported:
 
 ---
 
+# Day 22 – Microsoft Entra ID & Cloud Identity Administration
+
+Completed:
+
+* Introduced Microsoft Entra ID as Microsoft's cloud-based identity and access management platform
+* Reviewed the role of Entra ID in managing cloud identities and access to Microsoft 365 resources
+* Explored the Microsoft Entra admin center and identity management interface
+* Created and managed cloud user accounts
+* Reviewed user account properties and account status
+* Reviewed Microsoft Entra groups and group membership
+* Created a Security Group for IT Help Desk users
+* Added users to security groups
+* Reviewed how group membership can be used to organize users and manage access
+* Reviewed Microsoft Entra administrator roles and permissions
+* Reviewed the concept of role-based administrative access and least privilege
+* Reviewed Microsoft 365 licensing through Entra ID
+* Assigned and verified Microsoft 365 licenses for users
+* Practiced administrator password reset workflows
+* Practiced troubleshooting a user authentication issue
+* Reviewed authentication methods associated with user accounts
+* Identified an account with no usable authentication methods
+* Generated a Temporary Access Pass (TAP) for a user experiencing an MFA issue
+* Reviewed the process of using a Temporary Access Pass to register an authentication method
+* Practiced troubleshooting user access issues through account, license, and group membership investigation
+* Applied a structured cloud identity troubleshooting workflow to realistic Help Desk tickets
+* Documented Entra ID incidents using Issue → Investigation → Root Cause → Resolution → Verification
+
+---
+
+## ☁️ Microsoft Entra ID
+
+Reviewed Microsoft Entra ID as a cloud-based identity and access management platform.
+
+Learned how Entra ID is used to manage:
+
+* Cloud user identities
+* User accounts
+* Security groups
+* Group membership
+* Authentication methods
+* Password management
+* Multi-Factor Authentication (MFA)
+* Temporary Access Passes (TAP)
+* Microsoft 365 licensing
+* Administrative permissions
+* Cloud-based access management
+
+Reviewed the relationship between:
+
+**User → Group Membership → License → Authentication → Resource Access**
+
+---
+
+## 👤 Entra ID User Administration
+
+Practiced locating and managing users through Microsoft Entra ID.
+
+Reviewed:
+
+* User accounts
+* User account status
+* User properties
+* Department information
+* Email addresses
+* Group membership
+* Assigned licenses
+* Authentication methods
+* Password management
+* User access troubleshooting
+
+Practiced verifying user accounts before making administrative changes.
+
+---
+
+## 👥 Entra ID Groups & Access Management
+
+Created and managed a Security Group for IT Help Desk users.
+
+Created:
+
+**IT-HelpDesk**
+
+Practiced:
+
+* Security Group creation
+* Group naming
+* Group descriptions
+* Assigned membership
+* Adding users to groups
+* Verifying group membership
+* Troubleshooting access based on group membership
+
+Reviewed how group membership can be used to organize users and manage access to organizational resources.
+
+---
+
+## 🔐 Entra ID Authentication & MFA
+
+Reviewed cloud authentication and Multi-Factor Authentication concepts.
+
+Practiced:
+
+* Reviewing user authentication methods
+* Identifying missing authentication methods
+* Troubleshooting MFA access issues
+* Generating a Temporary Access Pass (TAP)
+* Reviewing secure credential registration
+* Registering authentication methods
+* Verifying successful MFA authentication
+
+Learned that a user can successfully authenticate with a password while still being unable to complete MFA if no usable authentication method is registered.
+
+---
+
+## 🔑 Entra ID Password Management
+
+Practiced administrator password reset workflows.
+
+Performed:
+
+* User identification
+* Identity verification
+* Password reset
+* Temporary password handling
+* User sign-in verification
+
+Reviewed the importance of securely handling temporary credentials and never documenting passwords or authentication credentials in public repositories.
+
+---
+
+# 🎫 Ticket #122 — Password Reset
+
+## Scenario
+
+John Smith reported:
+
+> "I forgot my Microsoft 365 password and I can't sign in."
+
+## Investigation
+
+* Verified the employee John Smith by department and email address
+* Confirmed John Smith's account was active
+* Located John Smith in Microsoft Entra ID
+
+## Resolution
+
+* Performed a password reset for John Smith
+* Provided the temporary password through an approved secure method
+
+## Root Cause
+
+* User forgot their password
+
+## Verification
+
+* John Smith confirmed that he was able to successfully sign in
+
+---
+
+# 🎫 Ticket #123 — MFA Problem
+
+## Scenario
+
+Sarah Sherman reported:
+
+> "I can sign into Microsoft 365 with my password, but it is asking me for MFA and I can't get past it."
+
+## Investigation
+
+* Verified the employee Sarah Sherman by department and email address
+* Confirmed Sarah Sherman's account was active
+* Located Sarah Sherman in Microsoft Entra ID
+* Reviewed Sarah Sherman's authentication methods
+* Determined that no usable authentication methods were registered
+
+## Resolution
+
+* Generated a Temporary Access Pass (TAP) for Sarah Sherman
+* Provided the TAP through an approved secure method
+* Provided secure registration instructions
+* Used the TAP to allow registration of an authentication method for MFA
+
+## Root Cause
+
+* No usable authentication method was registered for Sarah Sherman's account
+
+## Verification
+
+* Sarah Sherman successfully registered an authentication method
+* Sarah Sherman successfully completed MFA authentication
+
+---
+
+# 🎫 Ticket #124 — Group Access
+
+## Scenario
+
+Mike Johnson reported:
+
+> "I was moved to the IT department, but I can't access the resources my coworkers can."
+
+## Investigation
+
+* Verified the employee Mike Johnson by department and email address
+* Confirmed Mike Johnson's account was active
+* Located Mike Johnson in Microsoft Entra ID
+* Reviewed Mike Johnson's group memberships
+* Determined that Mike Johnson was not a member of any groups
+* Reviewed Mike Johnson's assigned licenses
+* Determined that Mike Johnson did not have a Microsoft 365 license assigned
+
+## Resolution
+
+* Assigned Mike Johnson the same Microsoft 365 license used by other users in the environment
+* Created the **IT-HelpDesk** Security Group
+* Added Mike Johnson to the IT-HelpDesk group
+* Verified the user's license and group membership
+
+## Root Cause
+
+* Mike Johnson did not have a Microsoft 365 license assigned
+* Mike Johnson was not a member of an appropriate IT security group
+
+## Verification
+
+* Microsoft 365 license was successfully assigned
+* Mike Johnson was successfully added to the IT-HelpDesk group
+* User account and group membership were verified in Microsoft Entra ID
+
+---
+
+## Day 22 Skills Practiced
+
+* Microsoft Entra ID administration
+* Cloud identity management
+* Cloud user administration
+* User account management
+* User account verification
+* Security Group creation
+* Security Group membership management
+* Group-based access concepts
+* Microsoft 365 license assignment
+* License verification
+* Password reset workflows
+* Authentication troubleshooting
+* Multi-Factor Authentication (MFA)
+* Authentication method management
+* Temporary Access Pass (TAP)
+* Secure credential registration
+* Microsoft Entra administrator roles
+* Role-based access concepts
+* Least-privilege administration
+* Cloud identity troubleshooting
+* Cloud access troubleshooting
+* Identity and access management
+* Help Desk ticket documentation
+* Issue → Investigation → Root Cause → Resolution → Verification workflow
+
+---
+
+---
+
 # 🧠 Skills Practiced
 
 ## Active Directory
@@ -1776,6 +2038,23 @@ User provisioning and account lifecycle management
 Cloud-based Help Desk troubleshooting
 Differentiating user-side issues from service-side outages
 Cloud service troubleshooting methodology
+Microsoft Entra ID administration
+Microsoft Entra ID user administration
+Cloud identity management
+Microsoft Entra Security Groups
+Group membership management
+Microsoft Entra administrator roles
+Role-based access concepts
+Least-privilege administration
+Microsoft Entra authentication methods
+Multi-Factor Authentication (MFA)
+Temporary Access Pass (TAP)
+Microsoft Entra password reset workflows
+Cloud identity and access management
+Cloud-based authentication troubleshooting
+Identity and access troubleshooting
+Entra ID licensing and license assignment
+
 
 --
 
@@ -1807,6 +2086,16 @@ Cloud service troubleshooting methodology
 - User resource access issues
 - Mapped drive troubleshooting
 - Group Policy troubleshooting
+-  Microsoft Entra ID troubleshooting
+- MFA troubleshooting
+- Authentication method troubleshooting
+- Temporary Access Pass workflows
+- Cloud identity troubleshooting
+- Group membership troubleshooting
+- Cloud license troubleshooting
+- Identity verification procedures
+- Cloud account access troubleshooting
+
 
 ---
 
@@ -1863,5 +2152,13 @@ Through hands-on scenarios, I have practiced:
 - Configuring Share and NTFS permissions
 - Verifying user access to shared resources
 - Troubleshooting file share and permission issues
+-  Managing cloud identities through Microsoft Entra ID
+- Managing Microsoft Entra Security Groups and group membership
+- Assigning and verifying Microsoft 365 licenses
+- Troubleshooting cloud authentication and MFA issues
+- Performing cloud password reset workflows
+- Using Temporary Access Passes for authentication recovery
+- Troubleshooting cloud-based identity and access issues
+
 
 This project represents a transition from foundational IT knowledge into practical Help Desk, Systems Administration, and Cloud Support skills.
