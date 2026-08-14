@@ -144,18 +144,6 @@ Today's lab introduced several real-world Help Desk scenarios involving:
 
 ---
 
-# 🎫 Help Desk Practice
-
-The following Exchange-related tickets will be completed separately as a practical troubleshooting exercise:
-
-- **Ticket #122 — Add User to IT Support Distribution List**
-- **Ticket #123 — Grant User Access to Shared Mailbox**
-- **Ticket #124 — User Can Access Shared Mailbox but Cannot Send As**
-
-These tickets will reinforce the Exchange concepts learned during today's lab.
-
----
-
 # ✅ Day 23 Status
 
 **Completed**
@@ -171,10 +159,6 @@ These tickets will reinforce the Exchange concepts learned during today's lab.
 - ✅ Mailbox permission troubleshooting
 - ✅ Exchange Admin Center navigation
 - ✅ Microsoft 365 Admin Center vs. Exchange Admin Center vs. Entra ID
-
-**Pending verification:**
-
-- ⏳ Final Outlook shared mailbox access/Send As test after Microsoft 365 permission propagation
 
 ---
 
