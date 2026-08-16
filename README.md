@@ -1906,6 +1906,320 @@ Mike Johnson reported:
 
 ---
 
+# Day 23 – Exchange Online Administration
+
+Completed:
+
+- Introduced Exchange Online as Microsoft's cloud-based email and messaging platform
+- Explored the Exchange Admin Center (EAC)
+- Reviewed Exchange Online mailbox administration
+- Created and managed user mailboxes
+- Reviewed mailbox properties and configuration
+- Practiced managing email aliases
+- Created and managed Distribution Lists
+- Added and managed Distribution List membership
+- Tested email delivery through a Distribution List
+- Created and configured Shared Mailboxes
+- Reviewed Shared Mailbox access and permissions
+- Added users to Shared Mailboxes
+- Reviewed the difference between Shared Mailbox access and Send As permissions
+- Configured Send As permissions for a user
+- Tested sending email as a Shared Mailbox
+- Troubleshot Shared Mailbox access
+- Compared Exchange Admin Center mailbox settings with Microsoft 365 Admin Center user settings
+- Practiced troubleshooting Microsoft 365 email and mailbox access issues
+- Applied Exchange Online administration concepts to realistic Help Desk scenarios
+- Documented Exchange Online incidents using Issue → Investigation → Root Cause → Resolution → Verification
+
+---
+
+## 📧 Exchange Online
+
+Reviewed Exchange Online as Microsoft's cloud-hosted email and messaging service.
+
+Learned how Exchange Online is used to manage:
+
+- User mailboxes
+- Shared Mailboxes
+- Email aliases
+- Distribution Lists
+- Mailbox permissions
+- Send As permissions
+- Email delivery
+- User email configuration
+- Cloud-based messaging administration
+
+---
+
+## 📬 Mailbox Administration
+
+Practiced managing Exchange Online mailboxes through the Exchange Admin Center.
+
+Reviewed:
+
+- User mailbox configuration
+- Mailbox properties
+- Email addresses
+- Email aliases
+- Mailbox access
+- Mailbox permissions
+- Shared Mailbox configuration
+- Troubleshooting mailbox access
+
+---
+
+## 👥 Distribution Lists
+
+Created and tested a Distribution List.
+
+Practiced:
+
+- Distribution List creation
+- Distribution List membership
+- Managing recipients
+- Testing email delivery
+- Troubleshooting group-based email delivery
+
+Learned that Distribution Lists are primarily used to distribute email messages to multiple recipients rather than provide shared mailbox access.
+
+---
+
+## 📮 Shared Mailboxes
+
+Created and configured a Shared Mailbox for the simulated IT Support environment.
+
+Practiced:
+
+- Shared Mailbox creation
+- Shared Mailbox configuration
+- Adding users to Shared Mailboxes
+- Verifying mailbox access
+- Troubleshooting mailbox access
+- Understanding shared mailbox permissions
+
+---
+
+## 🔑 Send As Permissions
+
+Reviewed the difference between accessing a Shared Mailbox and being able to send email as that mailbox.
+
+Practiced:
+
+- Reviewing Shared Mailbox permissions
+- Identifying missing Send As permissions
+- Assigning Send As access
+- Testing Send As functionality
+
+Learned:
+
+**Shared Mailbox Access ≠ Send As Permission**
+
+A user may be able to open and manage a Shared Mailbox without having permission to send messages using the Shared Mailbox's email address.
+
+---
+
+## 🛠️ Exchange Online Troubleshooting
+
+Practiced troubleshooting common Exchange Online Help Desk scenarios involving:
+
+- Mailbox access
+- Shared Mailbox access
+- Email aliases
+- Distribution Lists
+- Distribution List membership
+- Mailbox permissions
+- Send As permissions
+- Email delivery
+
+Applied a structured troubleshooting workflow:
+
+**Verify → Investigate → Configure → Test → Verify**
+
+---
+
+## Day 23 Skills Practiced
+
+- Exchange Online administration
+- Exchange Admin Center (EAC)
+- Microsoft 365 mailbox administration
+- User mailbox management
+- Shared Mailbox administration
+- Shared Mailbox permissions
+- Send As permissions
+- Email alias management
+- Distribution List creation
+- Distribution List membership
+- Email delivery testing
+- Mailbox access troubleshooting
+- Shared Mailbox troubleshooting
+- Exchange Online Help Desk support
+- Cloud email administration
+- Cloud messaging administration
+- Microsoft 365 email troubleshooting
+- Permission troubleshooting
+- Email access troubleshooting
+- Exchange Online ticket documentation
+- Issue → Investigation → Root Cause → Resolution → Verification workflow
+
+---
+
+# Day 24 – Microsoft 365 Help Desk Administration
+
+Completed:
+
+- Applied Microsoft 365 and Entra ID administration skills through realistic Help Desk ticket scenarios
+- Practiced troubleshooting Microsoft 365 user account access issues
+- Verified Microsoft 365 Business Standard licensing and individual application services
+- Enabled Office for the Web and Microsoft 365 Apps for a licensed user
+- Practiced account lockout and disabled account troubleshooting
+- Investigated account status and sign-in failures
+- Removed sign-in blocks and re-enabled disabled user accounts
+- Performed Microsoft 365 password resets after verifying user identity
+- Troubleshot user access based on security group membership
+- Added users to security groups to provide access to organizational resources
+- Verified group ownership and authorization before making access changes
+- Provisioned a new employee with a Microsoft 365 license, applications, temporary password, and mailbox
+- Troubleshot shared mailbox access
+- Verified shared mailbox permissions
+- Differentiated shared mailbox access from Send As permissions
+- Assigned Send As permissions to a user
+- Tested Send As functionality after permission changes
+- Practiced verifying whether a user already had the required access before making changes
+- Applied a structured Help Desk troubleshooting workflow to Microsoft 365 incidents
+- Documented Microsoft 365 incidents using Issue → Investigation → Root Cause → Resolution → Verification
+
+---
+
+## ☁️ Microsoft 365 Help Desk Administration
+
+Applied Microsoft 365 administration skills to realistic Help Desk scenarios involving:
+
+- User account access
+- Password resets
+- Account lockouts
+- Disabled accounts
+- Sign-in blocks
+- Microsoft 365 licensing
+- Office application access
+- Security group membership
+- New employee provisioning
+- Shared mailbox access
+- Shared mailbox permissions
+- Send As permissions
+
+Practiced troubleshooting issues by checking:
+
+**User Account → Account Status → License → Group Membership → Application Access → Mailbox Access → Permissions**
+
+---
+
+## 📧 Exchange Online & Shared Mailboxes
+
+Practiced troubleshooting shared mailbox access and permissions.
+
+Reviewed:
+
+- Shared mailbox membership
+- Shared mailbox access
+- Group-based mailbox access
+- Read/manage permissions
+- Send As permissions
+- Permission verification
+- Send As testing
+- Troubleshooting mailbox access issues
+
+Learned that:
+
+**Mailbox Access ≠ Send As Permission**
+
+A user may be able to access a shared mailbox without having permission to send messages as that mailbox.
+
+---
+
+## 👤 Microsoft 365 User Administration
+
+Practiced common Microsoft 365 Help Desk tasks including:
+
+- User verification
+- Account status investigation
+- Account enable/disable management
+- Sign-in block troubleshooting
+- Password resets
+- License verification
+- Application service verification
+- New employee provisioning
+- Temporary password handling
+- User access verification
+
+---
+
+## 👥 Microsoft 365 Groups & Access
+
+Practiced using group membership to manage access to organizational resources.
+
+Performed:
+
+- Group membership verification
+- Adding users to security groups
+- Checking group ownership
+- Confirming authorization before access changes
+- Troubleshooting resource access through group membership
+- Verifying access after group membership changes
+
+---
+
+## 🎫 Microsoft 365 Help Desk Tickets
+
+Completed realistic Help Desk scenarios involving:
+
+- Microsoft 365 licensing and application access
+- Password resets
+- Account lockouts
+- Disabled accounts
+- Security group access
+- HR group membership
+- New employee provisioning
+- Shared mailbox access
+- Send As permissions
+
+Ticket documentation followed:
+
+**Issue → Investigation → Root Cause → Resolution → Verification**
+
+Ticket #121 — **New Employee Needs Outlook & Teams** was intentionally skipped to avoid redundancy with other Microsoft 365 provisioning and application-access scenarios.
+
+---
+
+## Day 24 Skills Practiced
+
+- Microsoft 365 Help Desk administration
+- Microsoft 365 user administration
+- Microsoft 365 Business Standard licensing
+- Microsoft 365 application/service management
+- Office for the Web administration
+- Microsoft 365 Apps administration
+- Account status troubleshooting
+- Disabled account troubleshooting
+- Sign-in block troubleshooting
+- Password reset workflows
+- User identity verification
+- Security Group membership management
+- Group ownership verification
+- New employee provisioning
+- Microsoft 365 mailbox provisioning
+- Shared mailbox access
+- Shared mailbox permissions
+- Send As permissions
+- Exchange Online mailbox troubleshooting
+- Permission troubleshooting
+- Cloud account troubleshooting
+- Cloud resource access troubleshooting
+- Help Desk ticket management
+- Root cause analysis
+- Incident verification
+- User access troubleshooting
+- Microsoft 365 troubleshooting methodology
+
 ---
 
 # 🧠 Skills Practiced
@@ -2002,58 +2316,111 @@ Mike Johnson reported:
 
 ---
 
+## Cloud / Cloud Support Skills
+
+- Exchange Online administration
+- Cloud email administration
+- Cloud mailbox administration
+- Shared Mailbox management
+- Cloud messaging administration
+- Cloud email troubleshooting
+- Cloud mailbox permissions
+- Cloud-based email access troubleshooting
+- Microsoft 365 Help Desk support
+- Microsoft 365 application access troubleshooting
+- Cloud account status troubleshooting
+- Cloud account enable/disable management
+- Cloud sign-in block troubleshooting
+- Cloud user provisioning
+- Cloud mailbox provisioning
+- Shared mailbox administration
+- Cloud mailbox permission management
+- Send As permission management
+- Cloud resource access troubleshooting
+- Cloud-based permission troubleshooting
+
+---
+
 ## Microsoft 365 Administration
 
-Microsoft 365 Admin Center
-Microsoft 365 cloud administration
-Microsoft 365 user administration
-Microsoft 365 user provisioning
-Microsoft 365 Business Standard licensing
-License assignment and verification
-Microsoft 365 application/service management
-Microsoft Teams administration
-Microsoft 365 Service Health
-Microsoft 365 account troubleshooting
-Microsoft 365 password management
-Microsoft 365 password reset workflows
-Microsoft 365 user account status
-Microsoft 365 Groups
-Security Groups
-Distribution Lists
-Group ownership and membership
-Microsoft 365 administrator roles
-Role-based access concepts
-Least-privilege administrative access
-New employee account provisioning
-Cloud application troubleshooting
-Cloud / Cloud Support Skills
-Cloud-based user administration
-SaaS administration concepts
-Microsoft 365 cloud services
-Cloud application access troubleshooting
-Cloud service health monitoring
-License-based service access
-Cloud identity and access concepts
-User provisioning and account lifecycle management
-Cloud-based Help Desk troubleshooting
-Differentiating user-side issues from service-side outages
-Cloud service troubleshooting methodology
-Microsoft Entra ID administration
-Microsoft Entra ID user administration
-Cloud identity management
-Microsoft Entra Security Groups
-Group membership management
-Microsoft Entra administrator roles
-Role-based access concepts
-Least-privilege administration
-Microsoft Entra authentication methods
-Multi-Factor Authentication (MFA)
-Temporary Access Pass (TAP)
-Microsoft Entra password reset workflows
-Cloud identity and access management
-Cloud-based authentication troubleshooting
-Identity and access troubleshooting
-Entra ID licensing and license assignment
+- Microsoft 365 Admin Center
+- Microsoft 365 cloud administration
+- Microsoft 365 user administration
+- Microsoft 365 user provisioning
+- Microsoft 365 Business Standard licensing
+- License assignment and verification
+- Microsoft 365 application/service management
+- Microsoft Teams administration
+- Microsoft 365 Service Health
+- Microsoft 365 account troubleshooting
+- Microsoft 365 password management
+- Microsoft 365 password reset workflows
+- Microsoft 365 user account status
+- Microsoft 365 Groups
+- Security Groups
+- Distribution Lists
+- Group ownership and membership
+- Microsoft 365 administrator roles
+- Role-based access concepts
+- Least-privilege administrative access
+- New employee account provisioning
+- Cloud application troubleshooting
+- Cloud / Cloud Support Skills
+- Cloud-based user administration
+- SaaS administration concepts
+- Microsoft 365 cloud services
+- Cloud application access troubleshooting
+- Cloud service health monitoring
+- License-based service access
+- Cloud identity and access concepts
+- User provisioning and account lifecycle management
+- Cloud-based Help Desk troubleshooting
+- Differentiating user-side issues from service-side outages
+- Cloud service troubleshooting methodology
+- Microsoft Entra ID administration
+- Microsoft Entra ID user administration
+- Cloud identity management
+- Microsoft Entra Security Groups
+- Group membership management
+- Microsoft Entra administrator roles
+- Role-based access concepts
+- Least-privilege administration
+- Microsoft Entra authentication methods
+- Multi-Factor Authentication (MFA)
+- Temporary Access Pass (TAP)
+- Microsoft Entra password reset workflows
+- Cloud identity and access management
+- Cloud-based authentication troubleshooting
+- Identity and access troubleshooting
+- Entra ID licensing and license assignment
+- Microsoft 365 application/service access
+- Office for the Web administration
+- Microsoft 365 Apps administration
+- Microsoft 365 account status troubleshooting
+- Disabled account troubleshooting
+- Sign-in block management
+- New employee Microsoft 365 provisioning
+- Shared mailbox administration
+- Shared mailbox access management
+- Shared mailbox permission management
+- Send As permissions
+- Send As troubleshooting
+- Mailbox permission verification
+- Exchange Online mailbox access troubleshooting
+- Cloud-based account lifecycle management
+- Exchange Online administration
+- Exchange Admin Center (EAC)
+- User mailbox administration
+- Shared Mailbox administration
+- Shared Mailbox permissions
+- Send As permissions
+- Email alias management
+- Distribution List administration
+- Distribution List membership
+- Microsoft 365 email administration
+- Cloud messaging administration
+- Mailbox access troubleshooting
+- Email delivery troubleshooting
 
 
 --
@@ -2095,6 +2462,28 @@ Entra ID licensing and license assignment
 - Cloud license troubleshooting
 - Identity verification procedures
 - Cloud account access troubleshooting
+- Exchange Online Help Desk support
+- Mailbox access troubleshooting
+- Shared Mailbox troubleshooting
+- Email alias troubleshooting
+- Distribution List troubleshooting
+- Email delivery troubleshooting
+- Mailbox permission troubleshooting
+- Send As permission troubleshooting
+- Cloud email troubleshooting
+- Microsoft 365 Help Desk administration
+- Microsoft 365 application access troubleshooting
+- Disabled account troubleshooting
+- Sign-in block troubleshooting
+- User identity verification
+- New employee provisioning
+- Shared mailbox troubleshooting
+- Shared mailbox permission troubleshooting
+- Send As permission troubleshooting
+- Group-based resource access troubleshooting
+- Cloud account access troubleshooting
+- Permission verification
+- Access verification after administrative changes
 
 
 ---
