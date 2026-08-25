@@ -1,6 +1,6 @@
 # 📁 Ticket 134 — Shared Folder Access / DNS Troubleshooting
 
-**Incident:** Ticket 134
+**Incident:** Ticket 134 
 **Category:** Software  
 **Channel:** Phone  
 **Priority:** 4 - Low  
