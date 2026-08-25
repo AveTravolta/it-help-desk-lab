@@ -89,7 +89,9 @@ but not
 
 This pointed toward a DNS/name-resolution issue rather than simply a permissions problem.
 
-🧠 What I Learned
+---
+
+## 🧠 What I Learned
 
 The biggest takeaway from Day 25 was understanding how ServiceNow and technical IT tools work together.
 
@@ -109,7 +111,9 @@ Resolve or escalate the ticket
 
 ServiceNow is much more than a ticketing system, but for an entry-level Help Desk role, incident management and ticket documentation are some of the most important areas to understand.
 
-Day 25 Takeaway
+---
+
+## Day 25 Takeaway
 
 Today connected my previous Active Directory, Windows Server, DNS, and file-sharing labs with a realistic Help Desk workflow.
 
