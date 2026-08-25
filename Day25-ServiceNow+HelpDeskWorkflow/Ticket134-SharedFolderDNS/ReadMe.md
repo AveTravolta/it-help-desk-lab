@@ -1,12 +1,10 @@
-# 📁 ServiceNow Ticket 03 — Shared Folder Access / DNS Troubleshooting
+# 📁 Ticket 134 — Shared Folder Access / DNS Troubleshooting
 
 **Incident:** INC-TICKET-003  
 **Category:** Software  
 **Channel:** Phone  
 **Priority:** 4 - Low  
 **State:** On Hold
-
-> Replace `INC-TICKET-003` with the actual ServiceNow incident number.
 
 ---
 
