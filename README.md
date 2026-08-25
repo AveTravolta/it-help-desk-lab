@@ -2222,6 +2222,111 @@ Ticket #121 — **New Employee Needs Outlook & Teams** was intentionally skipped
 
 ---
 
+# Day 25 – ServiceNow + Help Desk Workflow
+
+Completed:
+
+- Added ServiceNow Incident Management to my Help Desk lab workflow
+- Created and managed realistic Help Desk incidents
+- Practiced incident categorization, impact, urgency, and priority
+- Added work notes and customer-facing documentation
+- Practiced resolving completed incidents
+- Practiced placing unresolved incidents on hold
+- Troubleshot a Windows login/password issue
+- Troubleshot and resolved an Active Directory account lockout
+- Used Active Directory Users and Computers (ADUC) to unlock accounts and reset passwords
+- Troubleshot a Windows network share access issue
+- Compared access between a working user and an affected user
+- Verified Active Directory group membership and file permissions
+- Tested network connectivity using `ping`
+- Tested network share connections using `net use`
+- Troubleshot DNS/name resolution using `nslookup`
+- Compared hostname-based and IP-based UNC paths to isolate a DNS issue
+- Documented incidents using a structured Help Desk troubleshooting workflow
+- Practiced identifying when an incident should be resolved versus placed on hold or escalated
+
+---
+
+## 🎫 ServiceNow & Incident Management
+
+Practiced using ServiceNow as an IT Help Desk ticketing and incident management platform.
+
+Worked with:
+
+- Incident creation
+- Incident categorization
+- Impact and urgency
+- Priority
+- Incident states
+- Work notes
+- Customer-visible comments
+- Resolution codes
+- Resolution notes
+- Ticket documentation
+- Incident resolution
+- On Hold status
+- Troubleshooting documentation
+
+Practiced the workflow:
+
+**User Issue → Investigation → Troubleshooting → Resolution or Escalation → Documentation → Verification**
+
+---
+
+## 🛠️ Help Desk Workflow
+
+Completed realistic Help Desk scenarios involving:
+
+- Windows login issues
+- Active Directory account lockouts
+- Password resets
+- Network share access
+- File and folder permissions
+- DNS/name resolution
+- User authentication
+- Network connectivity
+
+Practiced troubleshooting by:
+
+**Understanding the Issue → Reproducing the Problem → Checking Configuration → Testing Connectivity → Isolating the Cause → Applying a Fix or Escalating → Documenting the Result**
+
+---
+
+## 🖥️ Windows Administration
+
+Added practical Help Desk troubleshooting experience involving:
+
+- Windows login troubleshooting
+- Active Directory account lockout troubleshooting
+- Password reset workflows
+- User authentication troubleshooting
+- Windows Network Shares
+- UNC path troubleshooting
+- Share and NTFS permission verification
+- File and folder access troubleshooting
+- Network share connectivity testing
+- DNS troubleshooting
+- Name resolution troubleshooting
+
+---
+
+## 🌐 Networking
+
+Practiced basic network troubleshooting through a realistic Help Desk scenario.
+
+Worked with:
+
+- `ping`
+- `nslookup`
+- `net use`
+- UNC paths
+- IP-based network share access
+- Hostname-based network share access
+- DNS/name resolution troubleshooting
+- Client/server connectivity verification
+
+---
+
 # 🧠 Skills Practiced
 
 ## Active Directory
@@ -2293,6 +2398,17 @@ Ticket #121 — **New Employee Needs Outlook & Teams** was intentionally skipped
 - Print Spooler troubleshooting
 - Group Policy Preferences
 - Mapped drive deployment
+- Windows login troubleshooting
+- Active Directory account lockout troubleshooting
+- Password reset workflows
+- User authentication troubleshooting
+- Windows Network Share troubleshooting
+- UNC path troubleshooting
+- Share and NTFS permission verification
+- File and folder access troubleshooting
+- Network share connectivity testing
+- DNS troubleshooting
+- Name resolution troubleshooting
 
 ---
 
@@ -2313,6 +2429,15 @@ Ticket #121 — **New Employee Needs Outlook & Teams** was intentionally skipped
 - UNC path management
 - Department resource access
 - Mapped drive administration
+- DNS troubleshooting
+- Name resolution testing
+- Hostname vs. IP troubleshooting
+- UNC path troubleshooting
+- Network share connectivity
+- Client/server connectivity testing
+- `ping`
+- `nslookup`
+- `net use`
 
 ---
 
@@ -2484,6 +2609,33 @@ Ticket #121 — **New Employee Needs Outlook & Teams** was intentionally skipped
 - Cloud account access troubleshooting
 - Permission verification
 - Access verification after administrative changes
+## Help Desk Skills
+
+- ServiceNow Incident Management
+- ServiceNow ticket creation
+- Incident categorization
+- Incident priority management
+- Impact and urgency assessment
+- Incident state management
+- Work notes
+- Customer-visible ticket comments
+- Resolution documentation
+- On Hold workflow
+- Incident escalation
+- Windows login troubleshooting
+- Active Directory account lockout troubleshooting
+- Password reset workflows
+- User authentication troubleshooting
+- Network share troubleshooting
+- File and folder access troubleshooting
+- DNS/name resolution troubleshooting
+- Network connectivity troubleshooting
+- UNC path troubleshooting
+- Root cause analysis
+- User access troubleshooting
+- Incident verification
+- Technical documentation
+- Help Desk troubleshooting methodology
 
 
 ---
